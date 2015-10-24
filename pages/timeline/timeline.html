@@ -88,6 +88,40 @@
         });
 </script>
 
+	<!-- 活動記録分岐 -->
+		<script type="text/javascript">
+			function inputAction(){
+				if(document.getElementById('changeSelect')){
+					id = document.getElementById('changeSelect').value;
+					if(id == 'achifact'){
+						document.getElementById('achifact-form').style.display = "";
+						document.getElementById('prize-form').style.display = "none";
+						document.getElementById('certification-form').style.display = "none";
+						document.getElementById('activity-form').style.display = "none";
+					}else if(id == 'prize'){
+						document.getElementById('achifact-form').style.display = "none";
+						document.getElementById('prize-form').style.display = "";
+						document.getElementById('certification-form').style.display = "none";
+						document.getElementById('activity-form').style.display = "none";
+					}else if(id == 'certification'){
+						document.getElementById('achifact-form').style.display = "none";
+						document.getElementById('prize-form').style.display = "none";
+						document.getElementById('certification-form').style.display = "";
+						document.getElementById('activity-form').style.display = "none";
+					}else if(id == 'activity'){
+						document.getElementById('achifact-form').style.display = "none";
+						document.getElementById('prize-form').style.display = "none";
+						document.getElementById('certification-form').style.display = "none";
+						document.getElementById('activity-form').style.display = "";
+					}
+				}
+			}
+			window.onload = entryChange2;
+		</script>
+
+
+
+
 </head>
 
 
@@ -200,30 +234,120 @@
                                     <div class="panel panel-default">
                                         <div id="addInfo" class="panel-collapse collapse">
                                             <div class="panel-body">
-                                                <div class="form-group">
-                                                    <label>タイプ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
-        <select class="selectpicker">
-            <option value="achifact"><button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>学習成果</option>
-            <option value="prize"><button type="button" class="btn btn-award btn-circle"><i class="fa fa-bookmark-o"></i></button>受賞歴</option>
-            <option value="certification"><button type="button" class="btn btn-danger btn-circle"><i class="fa fa-gear"></i></button>取得資格</option>
-            <option value="activity"><button type="button" class="btn btn-success btn-circle"><i class="fa fa-building-o"></i></button>就職進学活動</option>
-        </select>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label>タイトル<i class="fa fa-fw fa-asterisk text-danger"></i></label>
-                                                    <input class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
-                                                    <textarea class="form-control" rows="3"></textarea>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>添付ファイル</label>
-                                                    <input type="file" class=" text-primary">
-                                                    <div class="vMargin15">XXXXXX.pdf
-                                                    <button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div>
-                                                </div>
+			<div class="form-group">
+				<label>タイプ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+					<select id="changeSelect" name="hoge" onchange="inputAction();">
+						<option value="achifact">学習成果</option>
+						<option value="prize">受賞歴</option>
+						<option value="certification">取得資格</option>
+						<option value="activity">就職進学活動</option>
+        			</select>
+            </div>
+			<!--achifactの場合 -->
+			<div id="achifact-form">
+				<div class="form-group">
+					<label>タイトル<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<input class="form-control">
+	            </div>
+				<div class="form-group">
+                	<label>実施日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                	<div class="input-group date"  id="date">
+                	<input type="text" class="form-control" ><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                	</div>
+				</div>
+	            <div class="form-group">
+	            	<label>テキスト<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+	            	<textarea class="form-control" rows="3"></textarea>
+	            </div>
+	            <div class="form-group">
+	            	<label>添付ファイル</label>
+	            	<input type="file" class=" text-primary">
+	            	<div class="vMargin15">XXXXXX.pdf
+	            	<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div>
+	            </div>
+	    	</div>
+	    	<!-- prizeの場合 -->
+			<div id="prize-form" style="display:none;">
+				<div class="form-group">
+					<label>表彰名<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<input class="form-control">
+	            </div>
+	            <div class="form-group">
+	            	<label>表彰内容（ランク、タイトルなど）<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+	            	<textarea class="form-control" rows="3"></textarea>
+	            </div>
+				<div class="form-group">
+                	<label>受賞日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                	<div class="input-group date"  id="date">
+                	<input type="text" class="form-control" ><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                	</div>
+	            <div class="form-group">
+	            	<label>コメント<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+	            	<textarea class="form-control" rows="3"></textarea>
+	            </div>
+	            </div>
+	    	</div>
+			<!--certificationの場合 -->
+			<div id="certification-form" style="display:none;">
+				<div class="form-group">
+					<label>資格名<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<input class="form-control">
+	            </div>
+	            <div class="form-group">
+	            	<label>取得内容（点数、級、ランクなど）<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+	            	<textarea class="form-control" rows="3"></textarea>
+	            </div>
+				<div class="form-group">
+                	<label>取得日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                	<div class="input-group date"  id="date">
+                	<input type="text" class="form-control" ><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                	</div>
+	            <div class="form-group">
+	            	<label>コメント<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+	            	<textarea class="form-control" rows="3"></textarea>
+	            </div>
+	            </div>
+	    	</div>
+			<!--activityの場合 -->
+			<div id="activity-form" style="display:none;">
+				<div class="form-group">
+					<label>希望進路先<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<select id="status">
+							<option value="p1">進学</option>
+							<option value="p2">就職</option>
+	        			</select>
+	            </div>
+				<div class="form-group">
+					<label>タイプ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<select id="status">
+							<option value="step1">活動中</option>
+							<option value="step2">内定</option>
+							<option value="step3">決定</option>
+							<option value="step4">終了</option>
+	        			</select>
+	            </div>
+				<div class="form-group">
+					<label>行先<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<input class="form-control">
+	            </div>
+	            <div class="form-group">
+	            	<label>実施内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+	            	<textarea class="form-control" rows="3"></textarea>
+	            </div>
+				<div class="form-group">
+                	<label>実施日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                	<div class="input-group date"  id="date">
+                	<input type="text" class="form-control" ><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                	</div>
+	            <div class="form-group">
+	            	<label>添付ファイル</label>
+	            	<input type="file" class=" text-primary">
+	            	<div class="vMargin15">XXXXXX.pdf
+	            	<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+	            	</div>
+	            </div>
+	            </div>
+	    	</div>
                                                 <button type="reset" class="btn btn-default"><span class="text-primary">クリア</span></button>
                                                 <button type="submit" class="btn btn-default"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;登録&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
 

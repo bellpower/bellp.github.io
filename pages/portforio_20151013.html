@@ -137,14 +137,13 @@
             
            <div class="row" style="margin-top:45px;">
             	<div class="alert alert-info text-center">
-                      <h3><span class="glyphicon glyphicon-fire"></span>&nbsp;将来の夢&nbsp;<span class="glyphicon glyphicon-fire"></span>
-                      <span class="dream">
-                      &nbsp;ぼくの夢は日本を支えるエンジニアになることです.
-                      </span>
-                      <span class="dream" style="display: none">Good Bye</p>
-                      <button type="button" class="btn btn-default btn-circle alert-info"><i class="fa fa-pencil text-primary"></i></button>
-
-                </h3></div>
+					<h3><span class="glyphicon glyphicon-fire"></span>&nbsp;将来の夢&nbsp;<span class="glyphicon glyphicon-fire"></span>
+					&nbsp;ぼくの夢は日本を支えるエンジニアになることです.
+					<button type="button" class="btn btn-default btn-circle alert-info" data-toggle="modal" data-target="#dream_edit">
+						<i class="fa fa-pencil text-primary"></i>
+					</button>
+					</h3>	
+                </div>
 			</div>
 			
 			<div class="row">
@@ -475,30 +474,44 @@ $(document).ready(function(){
                                                             	<i class="fa fa-building-o"></i>
                                                       </button>
                                                            &nbsp;SCSK会社説明会決定!!!
-                                                      <a data-toggle="collapse" data-parent="#accordion" href="#activity"  aria-expanded="false">
-                                                      <div class="pull-right">
-                                                            	<button type="button" class="btn btn-default btn-circle left">
-                                                            	<i class="fa fa-level-down text-primary"></i>
-                                                            	</button>
-													  </a>
-															<!-- コメント入力 -->
-                                                       <a href="#" class="myeditable" data-type="textarea" data-name="comments" data-original-title="Enter comments">
                                                             <button type="button" class="btn btn-default btn-circle left">
-                                                            	<i class="fa fa-comments text-primary"></i>
+                                                            	<i class="fa fa-comment text-primary"></i>
                                                             </button>
-                                                       	</a>
-
-                                                             <!-- ./コメント入力 -->
+                                                      <div class="pull-right">
+	                                                      <a data-toggle="collapse" data-parent="#accordion" href="#activity"  aria-expanded="false">
+	                                                            <button type="button" class="btn btn-normal btn-circle left">
+	                                                            	<i class="fa fa-level-down text-primary"></i>
+	                                                            </button>
+														  </a>
 													  </div>
 													  <div id="activity" class="panel-collapse collapse" aria-expanded="false">
 													  <div class="panel-body">
+                                                            <div class="pull-right">
+	                                                            <button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#staticModal2">
+	                                                            <i class="fa fa-pencil text-primary"></i></button>
+	                                                            
+	                                                            
+    	                                                        <button type="button" class="btn btn-default btn-circle left">
+    	                                                        <i class="fa fa-times text-primary"></i></button>
+ 															</div>
 								                              <h5><span class="label label-primary">日時</span>&nbsp;2015年10月10日</h5>
 								                              <h5><span class="label label-primary">内容</span>&nbsp;申し込んでいた説明会の参加案内が来た。</h5>
 								                              <h5><span class="label label-default">添付</span>&nbsp;<a href="#">当日案内.pdf</a></h5>
-                                                            <div class="pull-right">
-                                                            <button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
- 															</div>
+								                              <h5><span class="label label-primary">コメント</span>
+								                              		&nbsp;<i class="fa fa-comment text-primary"></i>
+								                              		いよいよ最初の一歩です！
+								                              		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								                              		<i class="fa fa-comment text-primary"></i>
+								                              		第一希望の前に他で経験しようかな。
+								                              </h5>
+															<form class="form-inline" role="form">
+																<div class="form-group">
+																	<input class="form-control" type="text" placeholder="コメントする．．．" />
+																</div>
+																<div class="form-group">
+																	<button class="btn btn-normal">追加</button>
+																</div>
+															</form>
 
 								                   	  </div>
 								                   	  </div>
@@ -510,24 +523,41 @@ $(document).ready(function(){
                                                             <button type="button" class="btn btn-danger btn-circle">
                                                             <i class="fa fa-gear"></i></button>
                                                             &nbsp;基本情報処理試験合格
-                                                            <div class="pull-right">
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-level-down text-primary"></i></button>
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-comments text-primary"></i></button>
-															</div>
+		                                                      <div class="pull-right">
+			                                                      <a data-toggle="collapse" data-parent="#accordion" href="#"  aria-expanded="false">
+			                                                            <button type="button" class="btn btn-normal btn-circle left">
+			                                                            	<i class="fa fa-level-down text-primary"></i>
+			                                                            </button>
+																  </a>
+															  </div>
 													  </td>
                                                     </tr>
                                                     <tr>
                                                       <td>
                                                             <button type="button" class="btn btn-award btn-circle"><i class="fa fa-bookmark-o"></i></button>
-                                                            &nbsp;&nbsp;ロボコン地区大会優勝<div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-level-down text-primary"></i></button>
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-comments text-primary"></i></button>
-															</div></td>
+                                                            &nbsp;&nbsp;ロボコン地区大会優勝
+		                                                      <div class="pull-right">
+			                                                      <a data-toggle="collapse" data-parent="#accordion" href="#"  aria-expanded="false">
+			                                                            <button type="button" class="btn btn-normal btn-circle left">
+			                                                            	<i class="fa fa-level-down text-primary"></i>
+			                                                            </button>
+																  </a>
+															  </div>
+														</td>
                                                     </tr>
                                                     <tr>
                                                       <td>
-                                                            <button type="button" class="btn btn-success btn-circle"><i class="fa fa-building-o"></i></button>&nbsp;&nbsp;SCSKにエントリーしてみた<div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-level-down text-primary"></i></button>
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-comments text-primary"></i></button>
-															</div></td>
+                                                            <button type="button" class="btn btn-success btn-circle"><i class="fa fa-building-o"></i></button>
+                                                            &nbsp;&nbsp;SCSKにエントリーしてみた
+		                                                      <div class="pull-right">
+			                                                      <a data-toggle="collapse" data-parent="#accordion" href="#"  aria-expanded="false">
+			                                                            <button type="button" class="btn btn-normal btn-circle left">
+			                                                            	<i class="fa fa-level-down text-primary"></i>
+			                                                            </button>
+																  </a>
+															  </div>
+															</div>
+														</td>
                                                     </tr>
                                                     <tr>
                                                       <td>
@@ -537,23 +567,31 @@ $(document).ready(function(){
                                                            &nbsp;数学演習課題提出
                                                       <a data-toggle="collapse" data-parent="#accordion" href="#attempt01"  aria-expanded="false">
                                                       <div class="pull-right">
-                                                            	<button type="button" class="btn btn-default btn-circle left">
-                                                            	<i class="fa fa-level-down text-primary"></i>
-                                                            	</button>
-													  </a>
-                                                            <button type="button" class="btn btn-default btn-circle left">
-                                                            	<i class="fa fa-comments text-primary"></i>
-                                                            </button>
+	                                                      <a data-toggle="collapse" data-parent="#accordion" href="#attempt01"  aria-expanded="false">
+	                                                            <button type="button" class="btn btn-normal btn-circle left">
+	                                                            	<i class="fa fa-level-down text-primary"></i>
+	                                                            </button>
+														  </a>
 													  </div>
 													  <div id="attempt01" class="panel-collapse collapse" aria-expanded="false">
 													  <div class="panel-body">
-								                              <h5><span class="label label-primary">日時</span>&nbsp;2015年7月10日</h5>
-								                              <h5><span class="label label-primary">内容</span>&nbsp;グループでの成果を登録しておく。</h5>
-								                              <h5><span class="label label-default">添付</span>&nbsp;<a href="#">グループA答案.pdf</a></h5>
                                                             <div class="pull-right">
                                                             <button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
                                                             <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
  															</div>
+								                              <h5><span class="label label-primary">日時</span>&nbsp;2015年7月10日</h5>
+								                              <h5><span class="label label-primary">内容</span>&nbsp;グループでの成果を登録しておく。</h5>
+								                              <h5><span class="label label-default">添付</span>&nbsp;<a href="#">グループA答案.pdf</a></h5>
+								                              <h5><span class="label label-primary">コメント</span>
+								                              </h5>
+															<form class="form-inline" role="form">
+																<div class="form-group">
+																	<input class="form-control" type="text" placeholder="コメントする．．．" />
+																</div>
+																<div class="form-group">
+																	<button class="btn btn-normal">追加</button>
+																</div>
+															</form>
 
 								                   	  </div>
 								                   	  </div>
@@ -720,12 +758,82 @@ $(document).ready(function(){
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-          <button type="button" class="btn btn-primary"  data-dismiss="modal">変更を保存</button>
+          <button type="button" class="btn btn-primary"  data-dismiss="modal">保存</button>
         </div>
       </div> <!-- /.modal-content -->
     </div> <!-- /.modal-dialog -->
   </div> <!-- /.modal -->
-  
+
+
+  <!-- モーダルダイアログ（将来の夢を編集） -->
+  <div class="modal fade" id="dream_edit" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
+          </button>
+          <h4 class="modal-title">将来の夢の編集</h4>
+        </div><!-- /modal-header -->
+        <div class="modal-body">
+			<div class="form-group">
+				<label>将来の夢<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+					ぼくの夢は日本を支えるエンジニアになることです。
+					<input class="form-control type="text" placeholder="ぼくの夢は日本を支えるエンジニアになることです。">
+            </div>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+          <button type="button" class="btn btn-primary"  data-dismiss="modal">保存</button>
+        </div>
+      </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+  </div> <!-- /.modal -->
+
+ 
+ 
+  <!-- モーダルダイアログ（活動記録修正） -->
+  <div class="modal fade" id="staticModal2" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
+          </button>
+          <h4 class="modal-title">活動記録の編集</h4>
+        </div><!-- /modal-header -->
+        <div class="modal-body">
+			<div class="form-group">
+				<label>タイトル<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+					<input class="form-control type="text" placeholder="SCSK会社説明会決定！">
+            </div>
+            <div class="form-group">
+            	<label>実施内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+            	<textarea class="form-control" rows="3" type="text" placeholder="申し込んでいた説明会の案内が来た。"></textarea>
+            </div>
+			<div class="form-group">
+            	<label>実施日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+            	<div class="input-group date"  id="date">
+            	<input type="text" class="form-control type="text" placeholder="2015年10月10日" ><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+            	</div>
+            <div class="form-group">
+            	<label>添付ファイル</label>
+            	<input type="file" class=" text-primary">
+            	<div class="vMargin15">当日案内.pdf
+            	<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+            	</div>
+            </div>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+          <button type="button" class="btn btn-primary"  data-dismiss="modal">保存</button>
+        </div>
+      	</div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+  </div> <!-- /.modal -->
+
+
+
 
 	<!-- 活動記録分岐 -->
 		<script type="text/javascript">

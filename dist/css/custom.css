@@ -192,3 +192,22 @@ a { text-decoration: none; }
 .step_add {
 	background-color:#e6e6fa;
 }
+
+.goal_title {
+	color:#333;
+	background-color:#f5deb3;
+	border-color:#ddd;
+	padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.goal_text {
+	color:#2f4f4f;
+}
+
+.input_form {
+	background-color:#f0f8ff;
+}
+

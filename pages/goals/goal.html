@@ -88,6 +88,8 @@
         });
 </script>
 
+
+
 </head>
 
 
@@ -187,12 +189,34 @@
     	                                <div class="panel-body">
 
    	                            		<div class="form-group">
-											<label>達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
-											<input style="width:150px;" type="text" class="form-control">
+											<label>目標達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+        									<select class="selectpicker">
+									            <option value="1st">
+									            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+									            	2014
+									            </option>
+									            <option value="2nd">
+									            	<button type="button" class="btn btn-award btn-circle"><i class="fa fa-bookmark-o"></i></button>
+									            	2015
+									            </option>
+									            <option value="3rd">
+									            	<button type="button" class="btn btn-danger btn-circle"><i class="fa fa-gear"></i></button>
+									            	2016
+									            </option>
+									            <option value="4th">
+									            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+									            	2017
+									            </option>
+									            <option value="5th">
+									            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+									            	2018
+									            </option>
+									        </select>
+									        年度
 										</div>
 
         	                            <div class="form-group">
-            	                            <label>タイプ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+            	                            <label>カテゴリ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
         									<select class="selectpicker">
 									            <option value="achifact">
 									            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
@@ -213,9 +237,10 @@
                                             <input class="form-control">
                                         </div>
                                         <div class="form-group">
-                                        	<label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                        	<label>内容</label>
                                             <textarea class="form-control" rows="3"></textarea>
                                         </div>
+
                                         	<button type="reset" class="btn btn-default"><span class="text-primary">クリア</span></button>
                                         	<button type="submit" class="btn btn-default"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;登録&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
 										
@@ -253,12 +278,12 @@
                             <h4>&nbsp;2018年度</h4>
 							<!--goal1 -->
 			                	<div class="panel panel-default">
-			                    	<div class="panel-heading">
+			                    	<div class="goal_title">
 			                    		<div>
 			                    			<a data-toggle="collapse" data-parent="#accordion" href="#goal1">
 			                    			<button type="button" class="btn btn-success btn-circle"><i class="fa fa-compass fa-fw"></i></button>
 			                    			夢を形にできる企業に就職する</a>
-			                    			<div class="pull-right"style="color:#f0ad4e">
+			                    			<div class="pull-right"style="color:#337ab7">
 			                    				<span style="margin-top:15px">
 			                    				<i class="fa fa-flag-o"></i>4
 			                    				&nbsp;<i class="fa fa-flag"></i>0
@@ -268,6 +293,12 @@
 			                    			</div>
 			                    		</div>
 			                    	</div>
+									<span style="padding-left:50px">
+										<button type="button" class="btn btn-normal btn-xs" data-toggle="modal" data-target="#">
+											<i class="fa fa-pencil text-primary"></i>
+										</button>
+										<span class="goal_text ">僕の夢は日本を支えるエンジニア。この夢をかなえることができる企業を探してさらにパワーアップしたい</span>
+									</span>
 
 		                            <div id="goal1" class="panel-collapse collapse" style="margin:15px;">
 		                            	<div class="panel-body">
@@ -282,7 +313,7 @@
 														<input type="text" class="form-control">
 													</div>
 													<div>
-														<label>達成目標年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+														<label>達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
 														<select class="selectpicker">
 														  <option value="1">2014年度</option>
 														  <option value="1">2015年度</option>
@@ -300,10 +331,6 @@
 			                                      <li class="list-group-item">
 			                                      	<input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-size="small" data-onstyle="warning">
 			                                      	&nbsp;<span style="font-weight:bold;font-size:medium">2018年：希望企業の入社試験に合格する</span><i class="fa fa-pencil text-primary"></i>
-			                                          	<div class="pull-right">
-								                            <button type="button" class="btn btn-default btn-circle" title="コメント"><i class="fa fa-comments-o text-primary"></i></button>
-								                            <button type="button" class="btn btn-default btn-circle" title="添付ファイル"><i class="fa fa-file-o text-primary"></i></button>
-				                                        </div>
 														<div style="margin-left:85px;margin-top:10px;font-size:10px;">
 															<form class="form-inline" role="form">
 																<div class="form-group">
@@ -318,26 +345,45 @@
 			                                      <li class="list-group-item">
 			                                      	<input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-size="small" data-onstyle="warning">
 			                                      	&nbsp;<span style="font-weight:bold;font-size:medium">2017年：会社説明会にエントリーする</span><i class="fa fa-pencil text-primary"></i>
-			                                          	<div class="pull-right">
-								                            <button type="button" class="btn btn-default btn-circle" title="コメント"><i class="fa fa-comments-o text-primary"></i></button>
-								                            <button type="button" class="btn btn-default btn-circle" title="添付ファイル"><i class="fa fa-file-o text-primary"></i></button>
-				                                        </div>
+													<div style="margin-left:85px;margin-top:10px;font-size:10px;">
+														<form class="form-inline" role="form">
+															<div class="form-group">
+																<input class="form-control" type="text" placeholder="コメントする．．．" />
+															</div>
+															<div class="form-group">
+																<button class="btn step_add">追加</button>
+															</div>
+														</form>
+													</div>
+
 			                                      </li>
 			                                      <li class="list-group-item">
 			                                      	<input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-size="small" data-onstyle="warning">
 			                                      	&nbsp;<span style="font-weight:bold;font-size:medium">2017年：エントリーシートを作成する</span><i class="fa fa-pencil text-primary"></i>
-			                                          	<div class="pull-right">
-								                            <button type="button" class="btn btn-default btn-circle" title="コメント"><i class="fa fa-comments-o text-primary"></i></button>
-								                            <button type="button" class="btn btn-default btn-circle" title="添付ファイル"><i class="fa fa-file-o text-primary"></i></button>
-				                                        </div>
+													<div style="margin-left:85px;margin-top:10px;font-size:10px;">
+														<form class="form-inline" role="form">
+															<div class="form-group">
+																<input class="form-control" type="text" placeholder="コメントする．．．" />
+															</div>
+															<div class="form-group">
+																<button class="btn step_add">追加</button>
+															</div>
+														</form>
+													</div>
 			                                      </li>
 			                                      <li class="list-group-item">
 			                                      	<input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-size="small" data-onstyle="warning">
 			                                      	&nbsp;<span style="font-weight:bold;font-size:medium">2016年：企業研究を行う</span><i class="fa fa-pencil text-primary"></i>
-			                                          	<div class="pull-right">
-								                            <button type="button" class="btn btn-default btn-circle" title="コメント"><i class="fa fa-comments-o text-primary"></i></button>
-								                            <button type="button" class="btn btn-default btn-circle" title="添付ファイル"><i class="fa fa-file-o text-primary"></i></button>
-				                                        </div>
+													<div style="margin-left:85px;margin-top:10px;font-size:10px;">
+														<form class="form-inline" role="form">
+															<div class="form-group">
+																<input class="form-control" type="text" placeholder="コメントする．．．" />
+															</div>
+															<div class="form-group">
+																<button class="btn step_add">追加</button>
+															</div>
+														</form>
+													</div>
 			                                      </li>
 			                                      
 			                                  </ul>
@@ -349,12 +395,12 @@
                             <h4>&nbsp;2015年度</h4>
 								<!-- goal2 -->
 			                	<div class="panel panel-default">
-			                    	<div class="panel-heading">
+			                    	<div class="goal_title">
 			                    		<div>
 			                    			<a data-toggle="collapse" data-parent="#accordion" href="#goal2" name="2015-1">
 			                    			<button type="button" class="btn btn-award btn-circle"><i class="fa fa-bicycle"></i></button>
 			                    			部活で新人戦に出場する</a>
-			                    			<div class="pull-right"style="color:#f0ad4e">
+			                    			<div class="pull-right"style="color:#337ab7">
 			                    				<span style="margin-top:15px">
 			                    				<i class="fa fa-flag-o"></i>1
 			                    				&nbsp;<i class="fa fa-flag"></i>3
@@ -364,7 +410,13 @@
 			                    			</div>
 			                    		</div>
 			                    	</div>
-
+			                    	
+									<span style="padding-left:50px">
+										<button type="button" class="btn btn-normal btn-xs" data-toggle="modal" data-target="#staticModal">
+											<i class="fa fa-pencil text-primary"></i>
+										</button>
+										<span class="goal_text">毎年度3月に行われる新人戦にレギュラーとして出場することを目標とする</span>
+									</span>
 			                            <div id="goal2" class="panel-collapse collapse" style="margin:15px;">
 			                            	<div class="panel-body">
 			                            	<button type="button" class="btn btn-outline btn-default step_add" data-toggle="collapse" data-parent="#accordion" href="#addStep2">
@@ -378,7 +430,7 @@
 														<input type="text" class="form-control">
 													</div>
 													<div>
-														<label>達成目標年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+														<label>達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
 														<select class="selectpicker">
 														  <option value="1">2014年度</option>
 														  <option value="1">2015年度</option>
@@ -394,23 +446,32 @@
 										
 			                                      <ul class="list-group">
 			                                          <li class="list-group-item"><input type="checkbox" checked data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-size="small" data-onstyle="warning">
-			                                          	&nbsp;<span style="font-weight:bold;font-size:medium">2015年：毎日腹筋50回</span>
-			                                          	<i class="fa fa-pencil text-primary"></i>
+			                                          	&nbsp;<span style="font-weight:bold;font-size:medium">
+			                                          	2015年：毎日腹筋50回</span>
+			                                          	<button type="button" class="btn btn-normal btn-xs" data-toggle="modal" data-target="#staticModal2">
+			                                          		<i class="fa fa-pencil text-primary"></i>
+														</button>
 														<br>
 														<h5 style="margin-left:80px">
 														<button type="button" class="btn btn-normal btn-xs">エビデンス</button>
-															&nbsp;&nbsp;<a href="#">pic20150624.jpg</a></span>
+															&nbsp;&nbsp;<a href="../../images/1.jpg" target="_blank">pic20150624.jpg</a></span>
 
 														</h5>
 														
 														<h5 style="margin-left:80px;">
 															<button type="button" class="btn btn-primary btn-xs">コメント</button>
 														</h5>
-														<div style="margin-left:70px;">
-															&nbsp;&nbsp;寝る前に毎日弟と頑張ってます。（自分）
-															<i class="fa fa-pencil text-primary"></i>
+														<div style="margin-left:100px;">
+															<i class="fa fa-comment text-primary"></i>
+															<div id="div802-tota">&nbsp;&nbsp;毎日寝る前に弟と競って頑張ってます。<i class="fa fa-pencil text-primary"></i></div>
+															<textarea name="data[div802-ta]" id="div802-ta" style="display:none;"></textarea>
 															<br>
-															&nbsp;&nbsp;偉いねぇ。（鐘ヶ江）
+															<i class="fa fa-comment text-primary"></i>
+															<div id="div803-tota">&nbsp;&nbsp;おなかが少しずつシマってきた気がします。<i class="fa fa-pencil text-primary"></i></div>
+															<textarea name="data[div802-ta]" id="div803-ta" style="display:none;"></textarea>
+															<br>
+															<i class="fa fa-comment-o text-primary"></i>
+															&nbsp;&nbsp;継続は力なりです。ガンバッテクダサイ（小田　徹）
 															<form class="form-inline" role="form">
 																<div class="form-group">
 																	<input class="form-control" type="text" placeholder="コメントする．．．" />
@@ -424,40 +485,57 @@
 				                                      </li>
 			                                          <li class="list-group-item"><input type="checkbox" checked data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-size="small" data-onstyle="warning">
 			                                          &nbsp;<span style="font-weight:bold;font-size:medium">2015年：毎朝2km走る</span><i class="fa fa-pencil text-primary"></i>
-			                                          	<div class="pull-right">
-								                            <button type="button" class="btn btn-default btn-circle" title="コメント"><i class="fa fa-comments-o text-primary"></i></button>
-								                            <button type="button" class="btn btn-default btn-circle" title="添付ファイル"><i class="fa fa-file-o text-primary"></i></button>
-				                                        </div>
+														<div style="margin-left:85px;margin-top:10px;font-size:10px;">
+															<form class="form-inline" role="form">
+																<div class="form-group">
+																	<input class="form-control" type="text" placeholder="コメントする．．．" />
+																</div>
+																<div class="form-group">
+																	<button class="btn step_add">追加</button>
+																</div>
+															</form>
+														</div>
 			                                          </li>
 			                                          <li class="list-group-item"><input type="checkbox" checked data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-size="small" data-onstyle="warning">
 			                                          &nbsp;<span style="font-weight:bold;font-size:medium">2015年：毎日素振り50回</span><i class="fa fa-pencil text-primary"></i>
-			                                          	<div class="pull-right">
-								                            <button type="button" class="btn btn-default btn-circle" title="コメント"><i class="fa fa-comments-o text-primary"></i></button>
-								                            <button type="button" class="btn btn-default btn-circle" title="添付ファイル"><i class="fa fa-file-o text-primary"></i></button>
-				                                        </div>
+														<div style="margin-left:85px;margin-top:10px;font-size:10px;">
+															<form class="form-inline" role="form">
+																<div class="form-group">
+																	<input class="form-control" type="text" placeholder="コメントする．．．" />
+																</div>
+																<div class="form-group">
+																	<button class="btn step_add">追加</button>
+																</div>
+															</form>
+														</div>
 			                                          </li>
 			                                          <li class="list-group-item"><input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-size="small" data-onstyle="warning">
 			                                          &nbsp;<span style="font-weight:bold;font-size:medium">2015年：部活開始30分前には必ず行く</span><i class="fa fa-pencil text-primary"></i>
-			                                          	<div class="pull-right">
-								                            <button type="button" class="btn btn-default btn-circle" title="コメント"><i class="fa fa-comments-o text-primary"></i></button>
-								                            <button type="button" class="btn btn-default btn-circle" title="添付ファイル"><i class="fa fa-file-o text-primary"></i></button>
-				                                        </div>
+														<div style="margin-left:85px;margin-top:10px;font-size:10px;">
+															<form class="form-inline" role="form">
+																<div class="form-group">
+																	<input class="form-control" type="text" placeholder="コメントする．．．" />
+																</div>
+																<div class="form-group">
+																	<button class="btn step_add">追加</button>
+																</div>
+															</form>
+														</div>
 			                                          </li>
 			                                          
 			                                      </ul>
 			                            </div>
-
 								<!--./goal2 -->
 								</div>
 
 								<!--goal3 -->
 			                	<div class="panel panel-default">
-			                    	<div class="panel-heading">
+			                    	<div class="goal_title">
 			                    		<div>
 			                    			<a data-toggle="collapse" data-parent="#accordion" href="#goal3">
 			                    			<button type="button" class="btn btn-success btn-circle"><i class="fa fa-compass fa-fw"></i></button>
 			                    			さまざまな職業を体験する</a>
-			                    			<div class="pull-right"style="color:#f0ad4e">
+			                    			<div class="pull-right"style="color:#337ab7">
 			                    				<span style="margin-top:15px">
 			                    				<i class="fa fa-flag-o"></i>0
 			                    				&nbsp;<i class="fa fa-flag"></i>0
@@ -467,6 +545,12 @@
 			                    			</div>
 			                    		</div>
 			                    	</div>
+									<span style="padding-left:50px">
+										<button type="button" class="btn btn-normal btn-xs" data-toggle="modal" data-target="#">
+											<i class="fa fa-pencil text-primary"></i>
+										</button>
+										<span class="goal_text">高専で高い技術を身に着け、技術をいかすことができる場所を探したい。</span>
+									</span>
 
 			                            <div id="goal3" class="panel-collapse collapse" style="margin:15px;">
 			                            <div class="panel-body">
@@ -481,7 +565,7 @@
 														<input type="text" class="form-control">
 													</div>
 													<div>
-														<label>達成目標年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+														<label>達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
 														<select class="selectpicker">
 														  <option value="1">2014年度</option>
 														  <option value="1">2015年度</option>
@@ -494,9 +578,6 @@
 			                                        </div>
 			                                    </div>
 		                                    </div>
-
-
-
 								</div>
 								<!-- /.goal3 -->
 							</div>
@@ -504,12 +585,12 @@
 						<h4>&nbsp;2014年度</h4>
 							<!--goal4 -->
                 			<div class="panel panel-default">
-                    		<div class="panel-heading">
+                    		<div class="goal_title">
                     		<div>
                     			<a data-toggle="collapse" data-parent="#accordion" href="#goal4">
                     			<button type="button" class="btn btn-primary btn-circle"><i class="fa fa fa-files-o"></i></button>
                     			危険物取扱者資格取得</a>
-			                    			<div class="pull-right"style="color:#f0ad4e">
+			                    			<div class="pull-right"style="color:#337ab7">
 			                    				<span style="margin-top:15px">
 			                    				<i class="fa fa-flag-o"></i>0
 			                    				&nbsp;<i class="fa fa-flag"></i>0
@@ -517,8 +598,14 @@
 			                    				&nbsp;<i class="fa fa-file"></i>0
 			                    				</span>
 			                    			</div>
-                    		</div>
-                    	</div>
+                    					</div>
+                    				</div>
+									<span style="padding-left:50px">
+										<button type="button" class="btn btn-normal btn-xs" data-toggle="modal" data-target="#">
+											<i class="fa fa-pencil text-primary"></i>
+										</button>
+										<span class="goal_text">できるということを資格という形で残していきたい。</span>
+									</span>
 
 
                             <div id="goal4" class="panel-collapse collapse" style="margin:15px;">
@@ -534,7 +621,7 @@
 														<input type="text" class="form-control">
 													</div>
 													<div>
-														<label>達成目標年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+														<label>達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
 														<select class="selectpicker">
 														  <option value="1">2014年度</option>
 														  <option value="1">2015年度</option>
@@ -547,28 +634,13 @@
 		                                        </div>
 		                                    </div>
 	                                    </div>
-
-<!-- /.goal4 -->
-
-
-
-
-
-
-
+										<!-- /.goal4 -->
 								<!-- ここまでに文字を入力 -->
 								</div>
-
-
-
                              
                             </div>
 
                             <!-- /Nav tabs -->
-
-
-
-
 
                             <!-- /.panel-body -->
                         </div>
@@ -576,8 +648,6 @@
 
                     </div>
                     <!-- /.col-lg-12 -->
-
-
 
                 </div>
                 <!-- /.row -->
@@ -590,8 +660,172 @@
     <!-- /#wrapper -->
 
 
+      <!-- モーダルダイアログ（目標） -->
+  <div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
+          </button>
+          <h4 class="modal-title">目標の編集</h4>
+        </div><!-- /modal-header -->
+        <div class="modal-body">
+    		<div class="form-group">
+			<label>目標達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+			<select class="selectpicker">
+	            <option value="1st">
+	            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+	            	2014
+	            </option>
+	            <option value="2nd">
+	            	<button type="button" class="btn btn-award btn-circle"><i class="fa fa-bookmark-o"></i></button>
+	            	2015
+	            </option>
+	            <option value="3rd">
+	            	<button type="button" class="btn btn-danger btn-circle"><i class="fa fa-gear"></i></button>
+	            	2016
+	            </option>
+	            <option value="4th">
+	            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+	            	2017
+	            </option>
+	            <option value="5th">
+	            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+	            	2018
+	            </option>
+	        </select>
+	        年度
+			</div>
+			<div class="form-group">
+				<label>カテゴリ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+					<select id="changeSelect" name="hoge" onchange="inputAction();">
+						<option value="achifact">キャリアデザイン</option>
+						<option value="prize">学習</option>
+						<option value="certification">生活</option>
+        			</select>
+            </div>
 
+			<div class="form-group">
+				<label>タイトル<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+					<input class="form-control" type="text" placeholder="部活で新人戦に出場する" />
+            </div>
+            <div class="form-group">
+            	<label>内容</label>
+            	<textarea rows="3" placeholder="毎年度3月に行われる新人戦にレギュラーとして出場することを目標とする" class="form-control">
+            	</textarea>
+            </div>
+	        <div class="form-group">
+	    		<label>添付ファイル</label>
+				<input type="file" class=" text-primary">
+				<div class="vMargin15">pic20150624.jpg
+					<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+				</div>
+			</div>
+		</div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+          <button type="button" class="btn btn-primary"  data-dismiss="modal">保存</button>
+        </div>
+      	</div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+  </div> <!-- /.modal -->
+
+      <!-- モーダルダイアログ（ステップ） -->
+  <div class="modal fade" id="staticModal2" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
+          </button>
+          <h4 class="modal-title">ステップの編集</h4>
+        </div><!-- /modal-header -->
+        <div class="modal-body">
+			<div class="form-group">
+				<label>ステップ名<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+					<input class="form-control" type="text" placeholder="毎日腹筋50回" />
+            </div>
+    		<div class="form-group">
+			<label>達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+			<select class="selectpicker">
+	            <option value="1st">
+	            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+	            	2014
+	            </option>
+	            <option value="2nd">
+	            	<button type="button" class="btn btn-award btn-circle"><i class="fa fa-bookmark-o"></i></button>
+	            	2015
+	            </option>
+	            <option value="3rd">
+	            	<button type="button" class="btn btn-danger btn-circle"><i class="fa fa-gear"></i></button>
+	            	2016
+	            </option>
+	            <option value="4th">
+	            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+	            	2017
+	            </option>
+	            <option value="5th">
+	            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+	            	2018
+	            </option>
+	        </select>
+	        年度
+			</div>
+
+	        <div class="form-group">
+	    		<label>添付ファイル</label>
+				<input type="file" class=" text-primary">
+				<div class="vMargin15">pic20150624.jpg
+					<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+				</div>
+			</div>
+		</div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+          <button type="button" class="btn btn-primary"  data-dismiss="modal">保存</button>
+        </div>
+      	</div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+  </div> <!-- /.modal -->
 
 </body>
+
+<script type="text/javascript">
+$('#div802-tota').click(function() {
+  $('#div802-tota').css('display', 'none');
+  $('#div802-ta')
+    .val($('#div802-tota').text())
+    .css('display', '')
+    .focus();
+});
+
+$('#div802-ta').blur(function() {
+  $('#div802-ta').css('display', 'none');
+  $('#div802-tota')
+    .text($('#div802-ta').val())
+    .css('display', '');
+});
+</script>
+
+<script type="text/javascript">
+$('#div803-tota').click(function() {
+  $('#div803-tota').css('display', 'none');
+  $('#div803-ta')
+    .val($('#div803-tota').text())
+    .css('display', '')
+    .focus();
+});
+
+$('#div803-ta').blur(function() {
+  $('#div803-ta').css('display', 'none');
+  $('#div803-tota')
+    .text($('#div803-ta').val())
+    .css('display', '');
+});
+</script>
+
 
 </html>
