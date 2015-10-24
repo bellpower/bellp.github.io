@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>学生情報　｜　ポートフォリオ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+	<link href="../../css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css">
+    
+    <link href="../../dist/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                                    <a href="#" class="navbar-brand">
+                   	<img src="../images/index.png" width="30" height="30" class="pull-left imgArea"/>
+                    </a>                    
+
+            </div>
+            <!-- /.navbar-header -->
+            
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> 田中 太郎　〇〇学科</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-dashboard fa-fw"></i> TOP</a>
+                        </li>
+                        <li>
+                            <a href="portforio.html"><i class="fa fa-male fa-fw"></i> 学生情報</a>
+                            <!--<ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flot.html">基本情報</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">追加情報</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">活動記録</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">指導履歴</a>
+                                </li>
+                             </ul>-->
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="academic.html"><i class="fa fa-signal fa-fw"></i> 学業情報</a>
+                        </li>
+                        <li>
+                            <a href="carrier.html"><i class="fa fa-compass fa-fw"></i> キャリア支援</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-flag fa-fw"></i> 目標管理</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+            <h1></h1>
+            
+            
+            
+                <div class="row">
+                    <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            学生情報
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home-pills" data-toggle="tab">基本<br class="visible-xs-block">情報</a>
+                                </li>
+                                <li><a href="#profile-pills" data-toggle="tab">追加<br class="visible-xs-block">情報</a>
+                                </li>
+                                <li><a href="#messages-pills" data-toggle="tab">活動<br class="visible-xs-block">記録</a>
+                                </li>
+                                <li><a href="#settings-pills" data-toggle="tab">指導<br class="visible-xs-block">履歴</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content"><h4></h4>
+
+                                <div class="tab-pane fade in active cardC" id="home-pills">
+                                        <h4></h4>
+                                        <div class="row">
+                                        	<div class="col-xs-12 col-sm-6 col-lg-4">
+                                            	<div class="text-center">
+                                                	<img src="../images/student.png">
+                                                    
+                                                    <div class="caption">
+                                                        <p class="text-primary"><button type="button" class="btn btn-outline btn-default"><i class="fa fa-upload"></i> 写真を変更</button></p>
+                                               		</div>
+                                                </div>
+                                            </div>
+
+											<div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-lg-4">
+                                            	<div>
+                                                    <div class="caption">
+                                                        <h6>科学コース　2年（123456789）</h6>
+                                                        <h3>田中 太郎</h3>
+                                                        <p>学歴　〇〇中学</p>
+                                                        <p><a data-toggle="collapse" data-parent="#accordion" href="#clubC">所属クラブ <span class="fa fa-angle-down"></span></a>　テニス部</p>
+                                                           <div id="clubC" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    テニス部<br>&nbsp;&nbsp;2014年4月1日-<br>
+                                                                    水泳部<br>&nbsp;&nbsp;2013年4月1日-2014年3月31日<br>
+                                                                    アメリカンフットボール部<br>&nbsp;&nbsp;2012年4月1日-2014年3月31日
+                                                                </div>
+                                                            </div>
+                                                        <p><a data-toggle="collapse" data-parent="#accordion" href="#committeeC">クラス委員 <span class="fa fa-angle-down"></span></a>　委員長</p>
+                                                            <div id="committeeC" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    委員長<br>&nbsp;&nbsp;2014年4月1日-<br>
+                                                                    副委員長<br>&nbsp;&nbsp;2013年4月1日-2014年3月31日<br>
+                                                                    風紀委員<br>&nbsp;&nbsp;2012年4月1日-2014年3月31日
+                                                                </div>
+                                                            </div>
+                                               		</div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div><!--end row-->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12">
+                                            	<div class="cardC_bottom">
+                                                	<blockquote>
+                                                    <p>
+                                                	<span class="katsudou"><i class="fa fa-fw fa-trophy"></i>TOEIC 600点　</span><br class="visible-xs-block">
+                                                	<span class="katsudou"><i class="fa fa-fw fa-thumbs-up"></i>課題回答 100点　</span><br class="visible-xs-block">
+                                                	<span class="katsudou"><i class="fa fa-fw fa-trophy"></i>TOEIC 550点　</span><br class="visible-xs-block">
+                                                	<span class="katsudou"><i class="fa fa-fw fa-trophy"></i>TOEIC 530点　</span><br class="visible-xs-block">
+                                                	<span class="katsudou"><i class="fa fa-fw fa-trophy"></i>TOEIC 520点　</span>
+                                                    </p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div><!--end row-->
+                                </div>
+
+                                
+                                
+                                <div class="tab-pane fade" id="profile-pills">
+                                	<h4></h4>
+                                	<p class="text-primary"><button type="button" class="btn btn-outline btn-default" data-toggle="collapse" data-parent="#accordion" href="#addInfo"><i class="fa fa-plus"></i> 新規情報の追加</button></p>
+                                    
+                                    <div class="panel panel-default">
+                                        <div id="addInfo" class="panel-collapse collapse">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                追加情報登録
+                                            </h4>
+                                        </div>
+                                            <div class="panel-body">
+                                                <div class="form-group">
+                                                    <label>タイトル<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                    <input class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>添付ファイル</label>
+                                                    <input type="file" class=" text-primary">
+                                                    <div class="vMargin15">XXXXXX.pdf
+                                                    <button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div>
+                                                </div>
+                                                <button type="reset" class="btn btn-default"><span class="text-primary">クリア</span></button>
+                                                <button type="submit" class="btn btn-default"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;登録&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                        <div class="alt-table-responsive">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>学生調書:chosyo.pdf <div class="pull-right"><button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div><br>　2013年10月12日<br>　田中 太郎
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>学生調書:chosyo.pdf <div class="pull-right"><button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div><br>　2013年10月12日<br>　田中 太郎
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>学生調書:chosyo.pdf <div class="pull-right"><button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div><br>　2013年10月12日<br>　田中 太郎
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>学生調書:chosyo.pdf <div class="pull-right"><button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div><br>　2013年10月12日<br>　田中 太郎
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>学生調書:chosyo.pdf <div class="pull-right"><button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div><br>　2013年10月12日<br>　田中 太郎
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                                <!-- /.table-responsive -->
+                                    </div>
+               					 <div class="tab-pane fade" id="messages-pills">
+                                    <h4></h4>
+                                	<p class="text-primary"><button type="button" class="btn btn-outline btn-default" data-toggle="collapse" data-parent="#accordion" href="#addActivity"><i class="fa fa-plus"></i> 活動記録の追加</button></p>
+
+                                    <div class="panel panel-default">
+                                        <div id="addActivity" class="panel-collapse collapse">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                活動記録登録
+                                            </h4>
+                                        </div>
+                                            <div class="panel-body">
+                                                <div class="form-group">
+                                                    <label>タイトル<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                    <input class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>種別<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                    <select class="form-control">
+                                                        <option>成果物</option>
+                                                        <option>取得資格</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>級・ランク<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                    <input class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>実施時期<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                    <input type="text" class="form-control" id="date">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>添付ファイル</label>
+                                                    <input type="file" class=" text-primary">
+                                                    <div class="vMargin15">XXXXXX.pdf
+                                                    <button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div>
+                                                </div>
+                                                <button type="reset" class="btn btn-default"><span class="text-primary">クリア</span></button>
+                                                <button type="submit" class="btn btn-default"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;登録&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                         <div class="alt-table-responsive">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            成果物:課題回答 <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-star text-primary"></i></button>
+                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+															<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>100点<br>2013年10月12日<br>がんばって100点取りました！
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>取得資格:TOEIC <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-star text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>100点<br>2013年10月12日<br>がんばって100点取りました！
+                                                       	</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>取得資格:TOEIC <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-star text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>100点<br>2013年10月12日<br>がんばって100点取りました！
+                                                       	</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>取得資格:TOEIC <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-star text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>100点<br>2013年10月12日<br>がんばって100点取りました！
+                                                       	</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>取得資格:TOEIC <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-star text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>100点<br>2013年10月12日<br>がんばって100点取りました！
+                                                       	</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                                <!-- /.table-responsive -->
+                                        <p class="text-primary"><button type="button" class="btn btn-outline btn-default btn-block">もっと見る</button></p>
+
+                                </div>
+                                <div class="tab-pane fade" id="settings-pills">
+                                    <h4></h4>
+                                	<p class="text-primary"><button type="button" class="btn btn-outline btn-default" data-toggle="collapse" data-parent="#accordion" href="#addGuidance"><i class="fa fa-plus"></i> 指導履歴の追加</button></p>
+                                    
+                                    <div class="panel panel-default">
+                                        <div id="addGuidance" class="panel-collapse collapse">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                指導履歴の追加
+                                            </h4>
+                                        </div>
+                                            <div class="panel-body">
+                                                <div class="form-group">
+                                                    <label>タイプ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                    <select class="form-control">
+                                                        <option>補講</option>
+                                                        <option>担任面談</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>添付ファイル</label>
+                                                    <input type="file" class=" text-primary">
+                                                    <div class="vMargin15">XXXXXX.pdf
+                                                    <button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button></div>
+                                                </div>
+                                                <button type="reset" class="btn btn-default"><span class="text-primary">クリア</span></button>
+                                                <button type="submit" class="btn btn-default"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;登録&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#2014"><span class="text-primary">2014</span></a>
+                                        </h4>
+                                    </div>
+                                    <div id="2014" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+
+                                         <div class="alt-table-responsive">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            補講 <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+															<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>2013年10月12日<br>田中 太郎
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>担任面談 <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>2013年10月12日<br>田中 太郎<br>担任面談の添付をしました。<br>これからの方針を話し合って決めています。<br>追加の面談を後日計画します。
+                                                       	</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                                <!-- /.table-responsive -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#2013"><span class="text-primary">2013</span></a>
+                                        </h4>
+                                    </div>
+                                    <div id="2013" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                         <div class="alt-table-responsive">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            補講 <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+															<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>2013年10月12日<br>田中 太郎
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>担任面談 <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>2013年10月12日<br>田中 太郎<br>担任面談の添付をしました。<br>これからの方針を話し合って決めています。<br>追加の面談を後日計画します。
+                                                       	</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                                <!-- /.table-responsive -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#2012"><span class="text-primary">2012</span></a>
+                                        </h4>
+                                    </div>
+                                    <div id="2012" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                         <div class="alt-table-responsive">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            補講 <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+															<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>2013年10月12日<br>田中 太郎
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>担任面談 <div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-pencil text-primary"></i></button>
+                                                        <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button></div><br>2013年10月12日<br>田中 太郎<br>担任面談の添付をしました。<br>これからの方針を話し合って決めています。<br>追加の面談を後日計画します。
+                                                       	</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                                <!-- /.table-responsive -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+	<!--datepicker -->
+	<script src="../js/bootstrap-datepicker.min.js"></script>
+    <script src="../js/bootstrap-datepicker.ja.js"></script>
+    <script>
+    $('#date').datepicker({
+    format: "yyyy/mm/dd",
+    language: "ja",
+    autoclose: true,
+    orientation: "top auto"
+    });
+    </script>
+
+
+</body>
+
+</html>

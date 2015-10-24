@@ -1,0 +1,194 @@
+.alert{
+    padding:3px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.navbar-text{margin-top:5px;margin-bottom:5px;}
+.navbar-default .navbar-text{color: #F1EBEB;}
+
+.well{
+    padding:10px;
+    margin-bottom:5px;
+}
+.breadcrumb{
+    padding:0px;
+    margin-bottom:0px;
+}
+.btn-award{color:#fff;background-color:#FB7455;border-color:#FB7455}.btn-award.active,.btn-award.focus,.btn-award:active,.btn-award:focus,.btn-award:hover,.open>.dropdown-toggle.btn-award{color:#fff;background-color:#c9302c;border-color:#ac2925}.btn-award.active,.btn-award:active,.open>.dropdown-toggle.btn-award{background-image:none}.btn-award.disabled,.btn-award.disabled.active,.btn-award.disabled.focus,.btn-award.disabled:active,.btn-award.disabled:focus,.btn-award.disabled:hover,.btn-award[disabled],.btn-award[disabled].active,.btn-award[disabled].focus,.btn-award[disabled]:active,.btn-award[disabled]:focus,.btn-award[disabled]:hover,fieldset[disabled] .btn-award,fieldset[disabled] .btn-award.active,fieldset[disabled] .btn-award.focus,fieldset[disabled] .btn-award:active,fieldset[disabled] .btn-award:focus,fieldset[disabled] .btn-award:hover{background-color:#d9534f;border-color:#d43f3a}.btn-award .badge{color:#d9534f;background-color:#fff}
+
+a { text-decoration: none; }
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 50px;
+        padding: 0 30px;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+@media(min-width:768px) {
+    .sidebar {
+        z-index: 1;
+        position: absolute;
+        width: 50px;
+        margin-top: 51px;
+    }
+
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+}
+.vMargin15{
+	margin:15px 0;
+}
+
+
+.login-body {
+    background-color: #ffffff;
+}
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+
+.about-section {
+    padding-top: 150px;
+    text-align: center;
+    background: #18DC94;
+}
+
+.support-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: rgba(245, 176, 22, 0.18);
+}
+
+/*カード案A*/
+.cardA{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	box-shadow: 2px 2px 3px 1px #CCC;
+	-webkit-box-shadow: 2px 2px 3px 1px #CCC;
+	-moz-box-shadow: 2px 2px 3px 1px #CCC;
+	margin-bottom:15px;
+}
+.cardA h3{
+	border-bottom:3px solid #CCC;
+	padding-bottom:10px;
+}
+.cardA_top{
+	background-color:#FFF;
+}
+.cardA_bottom{
+	background-color:#00C;
+	color:#FFF;
+	font-size:10px;
+}
+.cardA blockquote{
+	font-size:12px;
+	margin-bottom:0;
+	border-left: 5px solid #006;
+}
+
+/*カード案B*/
+.cardB{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	color:#FF86D5;
+	box-shadow: 2px 2px 3px 1px #CCC;
+	-webkit-box-shadow: 2px 2px 3px 1px #CCC;
+	-moz-box-shadow: 2px 2px 3px 1px #CCC;
+	margin-bottom:15px;
+}
+.cardB h3{
+	border-bottom:3px solid #CCC;
+	padding-bottom:10px;
+}
+.cardB_top{
+	background-color:#FFF;
+	color:#F9F;
+}
+.cardB_bottom{
+	background-color:#FF86D5;
+	color:#FFF;
+	font-size:10px;
+}
+.cardB blockquote{
+	font-size:12px;
+	margin-bottom:0;
+	border-left: 5px solid #F06;
+}
+
+/*カード案C*/
+.cardC{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	box-shadow: 2px 2px 3px 1px #CCC;
+	-webkit-box-shadow: 2px 2px 3px 1px #CCC;
+	-moz-box-shadow: 2px 2px 3px 1px #CCC;
+	margin-bottom:15px;
+}
+.cardC h3{
+	border-bottom:3px solid #CCC;
+	padding-bottom:10px;
+}
+.cardC_top{
+	background-color:#FFF;
+}
+.cardC_bottom{
+	background-color:#006;
+	color:#FFF;
+}
+.cardC blockquote{
+	font-size:12px;
+	margin-bottom:0;
+	border-left: 5px solid #006;
+}
+.cardC .katsudou{
+	border:1px solid #999;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	line-height:200%;
+	background-color:#03F;
+}
+
+
+.sp-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 0px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.sp-callout-warning {
+    border-left-color: #aa6708;
+}
+.sp-callout-info {
+    border-left-color: #1b809e;
+}
+
+.bbox {
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #359DFD 50%, #286090 50%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s;
+    border:0px;
+}
+
+.bbox:hover {
+    background-position: 0 +100%;
+}
+
+.step_add {
+	background-color:#e6e6fa;
+}

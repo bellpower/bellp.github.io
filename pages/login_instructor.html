@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ログイン　｜　ポートフォリオ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Core CSS 
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
+-->
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/creative.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="login-body">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">高専 学生ポートフォリオシステム（仮）</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">How to Use</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#support">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+            <h3>高専機構統一認証基盤（共通認証ID）でログイン</h3>
+            <!-- EMBEDDED-WAYF-START -->
+<script type="text/javascript"><!--
+// To use this JavaScript, please access:
+// https://ds.gakunin.nii.ac.jp/WAYF/embedded-wayf.js/snippet.html
+// and copy/paste the resulting HTML snippet to an unprotected web page that 
+// you want the embedded WAYF to be displayed
+
+
+//////////////////// ESSENTIAL SETTINGS ////////////////////
+
+// URL of the WAYF to use
+// Examples: "https://wayf.switch.ch/SWITCHaai/WAYF", "https://wayf-test.switch.ch/aaitest/WAYF";
+// [Mandatory]
+var wayf_URL = "https://ds.gakunin.nii.ac.jp/WAYF";
+
+// EntityID of the Service Provider that protects this Resource
+// Examples: "https://econf.switch.ch/shibboleth", "https://dokeos.unige.ch/shibboleth"
+// [Mandatory]
+var wayf_sp_entityID = "https://bb.kosen-ac.jp/shibboleth-sp";
+
+// Shibboleth Service Provider handler URL
+// Examples: "https://point.switch.ch/Shibboleth.sso", "https://rr.aai.switch.ch/aaitest/Shibboleth.sso"
+// [Mandatory, if wayf_use_discovery_service = false]
+var wayf_sp_handlerURL = "https://bb.kosen-ac.jp/Shibboleth.sso";
+
+// URL on this resource that the user shall be returned to after authentication
+// Examples: "https://econf.switch.ch/aai/home", "https://olat.uzh.ch/my/courses"
+// [Mandatory]
+var wayf_return_url = "https://bb.kosen-ac.jp/webapps/bb-auth-provider-shibboleth-bb_bb60/execute/shibbolethLogin?returnUrl=https%3A%2F%2Fbb.kosen-ac.jp%2Fwebapps%2Fportal%2Fframeset.jsp&authProviderId=_3_1";
+
+
+//////////////////// RECOMMENDED SETTINGS ////////////////////
+
+// Width of the embedded WAYF in pixels or "auto"
+// This is the width of the content only (without padding and border). 
+// Add 2 x (10px + 1px) = 22px for padding and border to get the actual 
+// width of everything that is drawn.
+// [Optional, default: "auto"]
+var wayf_width = "450";
+
+// Height of the embedded WAYF in pixels or "auto"
+// This is the height of the content only (without padding and border). 
+// Add 2 x (10px + 1px) = 22px for padding and border to get the actual 
+// height of everything that is drawn.
+// [Optional, default: "auto"]
+var wayf_height = "80";
+
+// Whether to show the checkbox to remember settings for this session
+// [Optional, default: true]
+var wayf_show_remember_checkbox = true;
+
+// Force the user's Home Organisation selection to be remembered for the
+// current browser session. If wayf_show_remember_checkbox is true
+// the checkbox will be shown but will be read only.
+// WARNING: Only use this feature if you know exactly what you are doing
+//          This option will cause problems that are difficult to find 
+//          in case they accidentially select a wrong Home Organisation
+// [Optional, false]
+var wayf_force_remember_for_session = false;
+
+// Logo size
+// Choose whether the small or large logo shall be used
+// [Optional, default: true]
+var wayf_use_small_logo = false;
+
+// Font size
+// [Optional, default: 12]
+var wayf_font_size = 12;
+
+// Font color
+// [Optional, default: #000000]
+var wayf_font_color = '#000000';
+
+// Border color
+// [Optional, default: #00247D]
+var wayf_border_color = '#00247D';
+
+// Background color
+// [Optional, default: #F4F7F7]
+var wayf_background_color = '#F4F7F7';
+
+// Whether to automatically log in user if he has a session/permanent redirect
+// cookie set at central wayf
+// [Optional, default: true]
+var wayf_auto_login = true;
+
+// Whether to hide the WAYF after the user was logged in
+// This requires that the _shib_session_* cookie is set when a user 
+// could be authenticated, which is the default case when Shibboleth is used.
+// For other Service Provider implementations have a look at the setting
+// wayf_check_login_state_function that allows you to customize this
+// [Optional, default: false]
+var wayf_hide_after_login = false;
+
+// Whether or not to show the categories in the drop-down list
+// Possible values are: true or false
+// [Optional, default: true]
+var wayf_show_categories =  true;
+
+// Most used Identity Providers will be shown as top category in the drop down
+// list if this feature is used.
+// [Optional, commented out by default]
+// var wayf_most_used_idps =  new Array("https://aai-logon.unibas.ch/idp/shibboleth", "https://aai.unil.ch/idp/shibboleth");
+
+// Categories of Identity Provider that shall not be shown
+// Possible values are: "hokkaido","tohoku","kanto","chubu","kinki","chugoku","shikoku","kyushu","others", "all"
+// Example of how to hide categories
+// var wayf_hide_categories =  new Array("other", "library");
+// [Optional, commented out by default]
+// var wayf_hide_categories =  new Array();
+
+// EntityIDs of Identity Provider whose category is hidden but that shall be shown anyway
+// If this array is not empty, wayf_show_categories will be disabled because
+// otherwise, unhidden IdPs may be displayed in the wrong category
+// Example of how to unhide certain Identity Providers
+// var wayf_unhide_idps = new Array("https://aai-login.uzh.ch/idp/shibboleth");
+// [Optional, commented out by default]
+// var wayf_unhide_idps = new Array();
+
+// EntityIDs of Identity Provider that shall not be shown at all
+// Example of how to hide certain Identity Provider
+// var wayf_hide_idps = new Array("https://idp.unige.ch/idp/shibboleth", "https://lewotolo.switch.ch/idp/shibboleth");
+// [Optional, commented out by default]
+// var wayf_hide_idps = new Array();
+
+
+//////////////////// ADVANCED SETTINGS ////////////////////
+
+// Use the SAML2/Shibboleth 2 Discovery Service protocol where
+// the user is sent back to the Service Provider after selection
+// of his Home Organisation.
+// This is true by default and it should only be uncommented and set to false
+// if there is a good reason why to use the old and deprecated Shibboleth WAYF
+// protocol instead.
+// [Optional, default: commented out]
+// var wayf_use_discovery_service = false;
+
+// Session Initiator URL of the Service Provider
+// Examples: "https://econf.switch.ch/Shibboleth.sso/DS", "https://dokeos.unige.ch/Shibboleth.sso/DS"
+// This will implicitely be set to wayf_sp_samlDSURL = wayf_sp_handlerURL + "/DS";
+// [Optional, if wayf_use_discovery_service = true 
+//  or if wayf_additional_idps is not empty, default: commented out]
+// var wayf_sp_samlDSURL = wayf_sp_handlerURL + "/Login";
+
+// Default IdP to preselect when central WAYF couldn't guess IdP either
+// This is usually the case the first time ever a user accesses a resource
+// [Optional, default: commented out]
+// var wayf_default_idp = "https://aai.switch.ch/idp/shibboleth";
+
+// Set a custom Assertion Consumer URL instead of
+// the default wayf_sp_handlerURL + '/SAML/POST'
+// Only relevant if wayf_use_discovery_service is false
+// Examples: "https://olat.uzh.ch/shib/samlaa", 
+// This will implicitely be set to wayf_sp_samlACURL = wayf_sp_handlerURL + "/SAML/POST";
+// "https://foodle.feide.no/simplesaml/shib13/sp/AssertionConsumerService.php"
+// [Optional, commented out by default]
+// var wayf_sp_samlACURL = "https://maclh.switch.ch/foo/bar";
+
+// Overwites the text of the checkbox if
+// wayf_show_remember_checkbox is set to true
+// [Optional, commented out by default]
+// var wayf_overwrite_checkbox_label_text = 'Save setting for today';
+
+// Overwrites the text of the submit button
+// [Optional, commented out by default]
+// var wayf_overwrite_submit_button_text = 'Go';
+
+// Overwrites the intro text above the drop-down list
+// [Optional, commented out by default]
+// var wayf_overwrite_intro_text = 'Select your Home Organisation to log in';
+
+// Overwrites the category name of the most used IdP category in the drop-down list
+// [Optional, commented out by default]
+// var wayf_overwrite_most_used_idps_text = 'Most popular';
+
+
+// Whether to hide the WAYF after the user was logged in
+// This requires that the _shib_session_* cookie is set when a user 
+// could be authenticated
+// If you want to hide the embedded WAYF completely, uncomment
+// the property and set it to "". This then won't draw anything
+// [Optional, default commented out: You are already logged in]
+// var wayf_logged_in_messsage = "";
+
+// Provide the name of a JavaScript function that checks whether the user
+// already is logged in. The function should return true if the user is logged
+// in or false otherwise. If the user is logged in, the Embedded WAYF will
+// hide itself or draw a custom message depending on the 
+// setting wayf_logged_in_messsage
+// The function you specify has of course to be implemented by yourself!
+// [Optional, commented out by default]
+// var wayf_check_login_state_function = function() { 
+// if (# specify user-is-logged-in condition#)
+//   return true;
+// else 
+//   return false;
+// }
+
+// EntityIDs, Names and SSO URLs of Identity Providers from other federations 
+// that shall be added to the drop-down list
+// The IdPs will be displayed in the sequence they are defined
+// [Optional, commented out by default]
+// var wayf_additional_idps = [ ];
+
+// Example of how to add Identity Provider from other federations
+// var wayf_additional_idps = [ 
+//        
+//        {name:"International University X",
+//        entityID:"urn:mace:switch.ch:SWITCHaai:example.university.org",
+//        SAML1SSOurl:"https://int.univ.org/shibboleth-idp/SSO"},
+//
+//        {name:"Some Other University",
+//        entityID:"https://other.univ.edu/idp/shibboleth",
+//        SAML1SSOurl:"https://other.univ.edu/shibboleth-idp/SSO"},
+// ];
+
+// The list which is the target of incremental search is extracted to IdP acquired by DiscpFeed
+// URL of DiscpFeed is set up
+// var wayf_discofeed_url = "https://point.switch.ch/Shibboleth.sso/DiscoFeed";
+// [Optional, commented out by default]
+// var wayf_discofeed_url = "";
+var wayf_discofeed_url = "../dist/js/IdP-List.js";
+
+// The path of Cookie created by SP is set. As for default configuration, 
+// the path of an access place is set.
+// var wayf_sp_cookie_path = "/";
+// [Optional, commented out by default]
+// var wayf_sp_cookie_path = "";
+
+// Height of the embedded WAYF IdP List in pixels
+// [Optional, default: 150]
+// var wayf_list_height = 150;
+
+
+//////////////////// ADDITIONAL CSS CUSTOMIZATIONS ////////////////////
+
+// To further customize the appearance of the Embedded WAYF you could
+// define CSS rules for the following CSS IDs that are used within the 
+// Embedded WAYF:
+// #wayf_div                     - Container for complete Embedded WAYF
+// #wayf_logo_div                - Container for logo
+// #wayf_logo                    - Image for logo
+// #wayf_intro_div               - Container of drop-down list intro label
+// #wayf_intro_label             - Label of intro text
+// #IdPList                      - The form element
+// #user_idp                     - Select element for drop-down list
+// #wayf_remember_checkbox_div   - Container of checkbox and its label
+// #wayf_remember_checkbox       - Checkbox for remembering settings for session
+// #wayf_remember_checkbox_label - Text of checkbox
+// #wayf_submit_button           - Submit button
+//
+// Use these CSS IDs carefully and at own risk because future updates could
+// interfere with the rules you created and the IDs may change without notice!
+
+
+//-->
+</script>
+
+<script type="text/javascript" charset="UTF-8"><!--
+    document.write('<script type="text/javascript" src="https://ds.gakunin.nii.ac.jp/WAYF/embedded-wayf.js?' + (new Date().getTime()) + '"></scr'+'ipt>');
+//-->
+</script>
+
+<noscript>
+  <!-- 
+  Fallback to Shibboleth DS session initiator for non-JavaScript users 
+  You should set the value of the target GET parameter to an URL-encoded 
+  absolute URL that points to a Shibboleth protected web page where the user 
+  is logged in into your application.
+  -->
+  <p>
+    <strong>Login:</strong> Javascript is not available for your web browser. Therefore, please <a href="/Shibboleth.sso/DS?target=">proceed manually</a>.
+  </p>
+</noscript>
+
+<!-- EMBEDDED-WAYF-END -->
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+            
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">その他のIDでログイン</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="ID" name="email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="パスワード" name="password" type="password" value="">
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="instructor_top.html" class="btn btn-lg btn-success btn-block">ログイン</a>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>このポートフォリオについて</h1><h2><p>学生ポートフォリオではあなたの夢をかなえるためのお手伝いをします。</p><p>どのように学んでいくか、学んできた成果や記録、成績を確認しながら、目標を立てて確実にステップアップしていきましょう！</p></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">ポートフォリオの使い方</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 text-center">
+                    <div class="service-box">
+                        <span class="glyphicon glyphicon-fire wow bounceIn text-primary" style="font-size:50px;"></span>
+                        <h3>あなたの夢を<br>書いてみましょう</h3>
+                        <p class="text-muted">卒業して、社会に出て、どんな夢を持って生きていきますか。</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>夢に向かって進みましょう</h3>
+                        <p class="text-muted">目標を立てて、キャリアを考えてみましょう。</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>とにかくためる</h3>
+                        <p class="text-muted">あなたの成果や記録、やってみたことを全部登録しておきましょう。</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>あなたと共に</h3>
+                        <p class="text-muted">このポートフォリオがあなたとともにありますように。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support"  class="support-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>使い方がわからないときは？</h1>
+                <p>以下のメールでお問い合わせを受け付けています。</p>
+                <p><a href="mailto:support-portfolio@kosen-ac.jp">support-portfolio@kosen-ac.jp</a>
+                </p>
+
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    概要
+                                </div>
+                                <div class="project-name">
+                                    ポートフォリオってなに？
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    操作方法
+                                </div>
+                                <div class="project-name">
+                                    登録の方法がわからない
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 基本スタイル変更 */
+
+/*フォント変更*/
+body {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+pre {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+input,
+button,
+select,
+textarea {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+.navbar-search .search-query {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
+.vMargin15{
+	margin:15px 0;
+}
+
+/*ログインページ背景*/
+#blueGra{
+background: rgb(37,141,200); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(37,141,200,1) 0%, rgba(37,141,200,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(37,141,200,1)), color-stop(100%,rgba(37,141,200,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+}
+
+#page-wrapper{
+	padding:0;
+}
+
+.topScore{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.alt-table-responsive {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*カード案A*/
+.cardA{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	box-shadow: 2px 2px 3px 1px #CCC;
+	-webkit-box-shadow: 2px 2px 3px 1px #CCC;
+	-moz-box-shadow: 2px 2px 3px 1px #CCC;
+	margin-bottom:15px;
+}
+.cardA h3{
+	border-bottom:3px solid #CCC;
+	padding-bottom:10px;
+}
+.cardA_top{
+	background-color:#FFF;
+}
+.cardA_bottom{
+	background-color:#00C;
+	color:#FFF;
+	font-size:10px;
+}
+.cardA blockquote{
+	font-size:12px;
+	margin-bottom:0;
+	border-left: 5px solid #006;
+}
+
+/*カード案B*/
+.cardB{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	color:#FF86D5;
+	box-shadow: 2px 2px 3px 1px #CCC;
+	-webkit-box-shadow: 2px 2px 3px 1px #CCC;
+	-moz-box-shadow: 2px 2px 3px 1px #CCC;
+	margin-bottom:15px;
+}
+.cardB h3{
+	border-bottom:3px solid #CCC;
+	padding-bottom:10px;
+}
+.cardB_top{
+	background-color:#FFF;
+	color:#F9F;
+}
+.cardB_bottom{
+	background-color:#FF86D5;
+	color:#FFF;
+	font-size:10px;
+}
+.cardB blockquote{
+	font-size:12px;
+	margin-bottom:0;
+	border-left: 5px solid #F06;
+}
+
+/*カード案C*/
+.cardC{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	box-shadow: 2px 2px 3px 1px #CCC;
+	-webkit-box-shadow: 2px 2px 3px 1px #CCC;
+	-moz-box-shadow: 2px 2px 3px 1px #CCC;
+	margin-bottom:15px;
+}
+.cardC h3{
+	border-bottom:3px solid #CCC;
+	padding-bottom:10px;
+}
+.cardC_top{
+	background-color:#FFF;
+}
+.cardC_bottom{
+	background-color:#006;
+	color:#FFF;
+}
+.cardC blockquote{
+	font-size:12px;
+	margin-bottom:0;
+	border-left: 5px solid #006;
+}
+.cardC .katsudou{
+	border:1px solid #999;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	line-height:200%;
+	background-color:#03F;
+}

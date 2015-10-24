@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 基本スタイル変更 */
+
+/*stickyfooter start*/
+
+/*stickyfooter end*/
+
+
+
+/*フォント変更*/
+body {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+pre {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+input,
+button,
+select,
+textarea {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+.navbar-search .search-query {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
+.vMargin15{
+	margin:15px 0;
+}
+/* 背景 */
+.navbar{
+	background-color:#033056;
+	color:#ffffff;
+}
+
+
+.navbar-default .navbar-brand {
+    color: #CACACA;
+}
+
+
+/*ログインページ背景*/
+#blueGra{
+background: rgb(37,141,200); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(37,141,200,1) 0%, rgba(37,141,200,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(37,141,200,1)), color-stop(100%,rgba(37,141,200,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+}
+
+#page-wrapper{
+	padding:0;
+	margin:0;
+}
+
+.topScore{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.alt-table-responsive {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*区切り線*/
+.devideLine{
+	padding:10px;
+	border-bottom:1px solid #E4E4E4;
+}
+
+/*画像表示*/
+.imgArea{
+	margin-right: 10px;
+}
+
+/*バッジ色変え*/
+.panel-default>.panel-heading .badge, .badge{
+	background-color:#C00;
+}
+
+/*上書き*/
+.navbar-brand {
+    padding: 5px 15px 15px;
+}
+
+.imgside{
+ padding-top:10px;
+}
+
+.tameru{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f5fc+0,cce8e5+50,9d9eea+50,9d9eea+53,bfe8f9+53,9d9eea+53,9d9eea+53,2ab0ed+100 */
+background: #e4f5fc; /* Old browsers */
+background: -moz-linear-gradient(top, #e4f5fc 0%, #cce8e5 50%, #9d9eea 50%, #9d9eea 53%, #bfe8f9 53%, #9d9eea 53%, #9d9eea 53%, #2ab0ed 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4f5fc), color-stop(50%,#cce8e5), color-stop(50%,#9d9eea), color-stop(53%,#9d9eea), color-stop(53%,#bfe8f9), color-stop(53%,#9d9eea), color-stop(53%,#9d9eea), color-stop(100%,#2ab0ed)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #e4f5fc 0%,#cce8e5 50%,#9d9eea 50%,#9d9eea 53%,#bfe8f9 53%,#9d9eea 53%,#9d9eea 53%,#2ab0ed 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #e4f5fc 0%,#cce8e5 50%,#9d9eea 50%,#9d9eea 53%,#bfe8f9 53%,#9d9eea 53%,#9d9eea 53%,#2ab0ed 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #e4f5fc 0%,#cce8e5 50%,#9d9eea 50%,#9d9eea 53%,#bfe8f9 53%,#9d9eea 53%,#9d9eea 53%,#2ab0ed 100%); /* IE10+ */
+background: linear-gradient(to bottom, #e4f5fc 0%,#cce8e5 50%,#9d9eea 50%,#9d9eea 53%,#bfe8f9 53%,#9d9eea 53%,#9d9eea 53%,#2ab0ed 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 ); /* IE6-9 *
+}
+

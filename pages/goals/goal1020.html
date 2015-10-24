@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>目標管理　｜　ポートフォリオ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../dist/css/bootstrap-toggle.css" rel="stylesheet">
+    <!--     <link href="../../dist/css/docs.min.css" rel="stylesheet">
+     -->
+
+    <!-- Custom Fonts -->
+    <link href="../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link href="../../css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" type="text/css" href="../../dist/css/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="../../dist/css/timeline-l.css">
+
+
+    <!-- Custom CSS -->
+    <link href="../../dist/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- jQuery -->
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../../dist/js/sb-admin-2.js"></script>
+
+    <!--datepicker -->
+    <script src="../../js/bootstrap-datepicker.min.js"></script>
+    <script src="../../js/bootstrap-datepicker.ja.js"></script>
+    <script>
+    $('#date').datepicker({
+    format: "yyyy/mm/dd",
+    language: "ja",
+    autoclose: true,
+    orientation: "top auto"
+    });
+    </script>
+
+
+
+    <script src="../../dist/js/bootstrap-select.js"></script>
+
+<script type="text/javascript">
+        $(window).on('load', function () {
+            $('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+        });
+</script>
+
+</head>
+
+
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        
+            <div class="navbar-header">
+                    <a href="#" class="navbar-brand">
+                       <img src="../../images/index.png" width="40" height="40" class="pull-left imgArea"/>
+                    </a>                    
+                    <div class="navbar-text">
+                        <img src="../../images/sample_student.jpg" width="35" height="40" class="img-circle pull-left imgArea">
+                        <span class="imgside text-nowrap">こんにちは、田中 太郎さん!</span>
+                    </div>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+                        <span class="sr-only">メニュー</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+            </div><!-- end of navbar-header -->
+
+            <div id="gnavi" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../portforio_20151013.html">ポートフォリオ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../tools_20151001-03.html">ツール</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../login.html">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="../portforio_20151013.html"><i class="fa fa-dashboard fa-fw"></i> TOP</a>
+                        </li>
+                        <li>
+                            <a href="../goals/goal.html"><i class="fa fa-flag fa-fw"></i> 目標管理</a>
+                        </li>
+                        <li>
+                            <a href="../student_info/student_info.html"><i class="fa fa-male fa-fw"></i> 基本情報</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-signal fa-fw"></i> 成果</a>
+                        </li>
+                        <li>
+                            <a href="../grade_info/grade_info.html"><i class="fa fa-signal fa-fw"></i> 成績</a>
+                        </li>
+                        <li>
+                            <a href="../career_info/career_info.html"><i class="fa fa-compass fa-fw"></i> キャリア</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+            <h1></h1>
+            
+                <div class="row">
+                    <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            目標管理
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                        	<button type="button" class="btn btn-warning btn-lg btn-block text-center " data-toggle="collapse" data-parent="#accordion" href="#addInfo">
+                        		<i class="fa fa-upload  fa-fw"></i>&nbsp;新しい目標を入力
+                        	</button>
+						<!-- /.panel-body -->
+                            <div class="panel panel-default">
+	                            <div id="addInfo" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+   	                            		<div class="form-group">
+											<label>達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+											<input style="width:150px;" type="text" class="form-control">
+										</div>
+
+        	                            <div class="form-group">
+            	                            <label>タイプ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+        									<select class="selectpicker">
+									            <option value="achifact">
+									            	<button type="button" class="btn btn-info btn-circle"><i class="fa fa-files-o"></i></button>
+									            	キャリアデザイン
+									            </option>
+									            <option value="prize">
+									            	<button type="button" class="btn btn-award btn-circle"><i class="fa fa-bookmark-o"></i></button>
+									            	学習
+									            </option>
+									            <option value="certification">
+									            	<button type="button" class="btn btn-danger btn-circle"><i class="fa fa-gear"></i></button>
+									            	生活
+									            </option>
+									        </select>
+                                        </div>
+										
+                                        <div class="form-group">
+                                        	<label>タイトル<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                        	<label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        	<button type="reset" class="btn btn-default"><span class="text-primary">クリア</span></button>
+                                        	<button type="submit" class="btn btn-default"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;登録&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+										
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						
+						</div>
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                	<a href="#home" data-toggle="tab tooltip"  data-placement="top" title="すべて">
+                                		すべて
+                                    </a> 
+                                </li>
+                                <li>
+                                	<a href="#home" data-toggle="tab tooltip"  data-placement="top" title="キャリアデザイン">
+                                	<button type="button" class="btn btn-success btn-circle"><i class="fa fa-compass fa-fw"></i></button>
+                                    <span class="hidden-xs">キャリア</span></a>
+                                </li>
+                                <li>
+                                	<a href="#profile"  data-toggle="tab tooltip"  data-placement="top" title="学習">
+                                	<button type="button" class="btn btn-primary btn-circle"><i class="fa fa fa-files-o"></i></button>
+                                	<span class="hidden-xs">学習</span></a>
+                                </li>
+                                <li>
+                                	<a href="#messages"  data-toggle="tab tooltip"  data-placement="top" title="生活">
+                                	<button type="button" class="btn btn-award btn-circle"><i class="fa fa-bicycle"></i></button>
+                                	<span class="hidden-xs">生活</span></a>
+                                </li>
+                             </ul>
+                            </div>
+
+                            <!-- /Nav tabs -->
+			
+
+                            <h4>&nbsp;2018年度</h4>
+
+<!--goal4 -->
+                	<div class="panel panel-default">
+                    	<div class="panel-heading">
+                    		<div>
+                    			<a data-toggle="collapse" data-parent="#accordion" href="#goal4">
+                    			<button type="button" class="btn btn-success btn-circle"><i class="fa fa-compass fa-fw"></i></button>
+                    			夢を形にできる企業に就職する</a>
+
+                            <button type="button" class="btn btn-default btn-circle" title="コメント"><i class="fa fa-comment text-primary"></i></button>
+                            <button type="button" class="btn btn-default btn-circle" title="評価"><i class="fa fa-hand-o-right text-primary"></i></button>
+                    		</div>
+                    	</div>
+
+                        <div id="goal4" class="panel-collapse collapse" style="margin:15px;">
+                        <div class="panel-body">
+                        <button type="button" class="btn btn-outline btn-default" data-toggle="collapse" data-parent="#accordion" href="#">
+                        	<i class="fa fa-plus"></i> ステップ</button>
+                                  <ul class="list-group">
+                                      <li class="list-group-item"><input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-onstyle="primary" data-size="small">&nbsp;企業研究を行う</li>
+                                      <li class="list-group-item"><input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-onstyle="primary" data-size="small">&nbsp;会社説明会にエントリーする</li>
+                                      <li class="list-group-item"><input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-onstyle="primary" data-size="small">&nbsp;エントリーシートを作成する</li>
+                                      <li class="list-group-item"><input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-onstyle="primary" data-size="small">&nbsp;希望企業の入社試験に合格する</li>
+                                      
+                                  </ul>
+                        </div>
+                        </div>
+                        <div class="panel-footer">
+                            <button type="button" class="btn btn-default btn-xs">ステータス</button>&nbsp;<button type="button" class="btn btn-warning  btn-xs">実行中</button>&nbsp;
+                            <strong><i class="fa fa-child fa-fw"></i><i class="fa fa-child fa-fw"></i><i class="fa fa-child fa-fw"></i></strong>
+                            <p>
+                            <button type="button" class="btn btn-default btn-circle" title="画像"><i class="fa fa-camera text-primary"></i></button>
+                            <button type="button" class="btn btn-default btn-circle" title="添付ファイル"><i class="fa fa-file-o text-primary"></i></button>
+							もう少しがんばります・・・
+                        </div>
+					</div>
+<!-- /.goal4 -->
+
+
+                            <h4>&nbsp;2015年度</h4>
+<!-- goal1 -->
+                	<div class="panel panel-default">
+                    	<div class="panel-heading">
+                    		<div>
+                    			<a data-toggle="collapse" data-parent="#accordion" href="#goal1" name="2015-1">
+                    			<button type="button" class="btn btn-award btn-circle"><i class="fa fa-bicycle"></i></button>
+                    			新人戦に出場する</a>
+                    		</div>
+                    	</div>
+
+                            <div id="goal1" class="panel-collapse collapse" style="margin:15px;">
+                            <div class="panel-body">
+                            <button type="button" class="btn btn-outline btn-default" data-toggle="collapse" data-parent="#accordion" href="#addStep1">
+                            <i class="fa fa-plus"></i> ステップ</button>
+
+                            <div class="panel panel-default">
+	                            <div id="addStep1" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+   	                            		<div class="form-group">
+											<label>ステップ名<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+											<input type="text" class="form-control">
+										</div>
+                                            <div class="form-group">
+                                                <label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+										<div class="form-group">
+						                	<label>月日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						                	<div class="input-group date"  id="date">
+						                	<input type="text" class="form-control" ><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+						                	</div>
+							            <div class="form-group">
+							            	<label>添付ファイル</label>
+							            	<input type="file" class=" text-primary">
+							            	<div class="vMargin15">XXXXXX.pdf
+							            	<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+							            	</div>
+							            </div>
+                                            <button type="submit" class="btn btn-default"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;追加&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                      <ul class="list-group">
+                                          <li class="list-group-item"><input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-onstyle="primary" data-size="small">&nbsp;毎日腹筋50回</li>
+                                          <li class="list-group-item"><input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-onstyle="primary" data-size="small">&nbsp;毎朝2km走る</li>
+                                          <li class="list-group-item"><input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-onstyle="primary" data-size="small">&nbsp;毎日素振り50回</li>
+                                          <li class="list-group-item"><input type="checkbox" data-toggle="toggle" data-width="75" data-on="完了" data-off="実行中" data-onstyle="primary" data-size="small">&nbsp;部活開始30分前には必ず行く</li>
+                                          
+                                      </ul>
+                            </div>
+                            </div>
+					</div>
+                        <div class="panel-footer">
+                            <button type="button" class="btn btn-default btn-xs">ステータス</button>&nbsp;<button type="button" class="btn btn-danger  btn-xs">完了</button>&nbsp;
+                            <strong><i class="fa fa-child fa-fw"></i><i class="fa fa-child fa-fw"></i><i class="fa fa-child fa-fw"></i>
+                            <i class="fa fa-child fa-fw"></i><i class="fa fa-child fa-fw"></i></strong>
+                            <p>
+                            <button type="button" class="btn btn-default btn-circle" title="画像"><i class="fa fa-camera text-primary"></i></button>
+                            出場できました
+                        </div>
+
+<!--./goal1 -->
+
+<!--goal2 -->
+                	<div class="panel panel-default">
+                    	<div class="panel-heading">
+                    		<div>
+                    			<a data-toggle="collapse" data-parent="#accordion" href="#goal2">
+                    			<button type="button" class="btn btn-success btn-circle"><i class="fa fa-compass fa-fw"></i></button>
+                    			さまざまな職業を体験する</a>
+                    		</div>
+                    	</div>
+
+
+                            <div id="goal2" class="panel-collapse collapse" style="margin:15px;">
+                            <div class="panel-body">
+                            <button type="button" class="btn btn-outline btn-default" data-toggle="collapse" data-parent="#accordion" href="#">
+                            <i class="fa fa-plus"></i> ステップの追加</button>
+                            </div>
+                            </div>
+
+					</div>
+
+<!-- /.goal2 -->
+
+
+                            <h4>&nbsp;2014年度</h4>
+
+<!--goal3 -->
+                	<div class="panel panel-default">
+                    	<div class="panel-heading">
+                    		<div>
+                    			<a data-toggle="collapse" data-parent="#accordion" href="#goal3">
+                    			<button type="button" class="btn btn-primary btn-circle"><i class="fa fa fa-files-o"></i></button>
+                    			危険物取扱者資格取得</a>
+                    		</div>
+                    	</div>
+
+
+                            <div id="goal3" class="panel-collapse collapse" style="margin:15px;">
+                            <div class="panel-body">
+                            <button type="button" class="btn btn-outline btn-default" data-toggle="collapse" data-parent="#accordion" href="#"><i class="fa fa-plus"></i> ステップの追加</button>
+
+					</div>
+
+<!-- /.goal3 -->
+
+
+                    </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+
+                    </div>
+                    <!-- /.col-lg-12 -->
+
+
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../../dist/js/sb-admin-2.js"></script>
+    <script src="../../dist/js/bootstrap-toggle.js"></script>
+
+    <!--datepicker -->
+    <script src="../../js/bootstrap-datepicker.min.js"></script>
+    <script src="../../js/bootstrap-datepicker.ja.js"></script>
+    <script>
+    $('#date').datepicker({
+    format: "yyyy/mm/dd",
+    language: "ja",
+    autoclose: true,
+    orientation: "top auto"
+    });
+    </script>
+
+
+</body>
+
+</html>

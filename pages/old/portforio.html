@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>学生情報　｜　ポートフォリオ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Morris Charts CSS -->
+    <link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+	<link href="../css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+        	
+            	<div class="navbar-header">
+                    <a href="#" class="navbar-brand">
+                    	<img src="../images/sample_student.jpg" width="32" height="40" class="img-circle pull-left imgArea">
+                    	<div class="imgside text-nowrap">こんにちは田中くん!</div>
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+                    	<span class="sr-only">メニュー</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+            	</div>
+                
+                <div id="gnavi" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">ポートフォリオ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ツール</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+							<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+            
+            
+            <div class="row" style="margin-top:65px;">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#purpose"><i class="fa fa-flag fa-fw"></i>目標</a>
+                        </div>
+                        <div id="purpose" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="devideLine">2015年秋学期　クラブでレギュラーになるぞ<div class="pull-right"><span class="badge">3</span>  <i class="fa fa-caret-right"></i></div></div>
+                                <div class="devideLine">2015年春学期　新人戦に出場する<div class="pull-right"><i class="fa fa-check text-primary"></i>  <i class="fa fa-caret-down"></i></div>
+                                	<p><strong><i class="fa fa-child text-primary fa-fw"></i>出場できました！</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 topScore">
+                        <button type="button" class="btn btn-primary btn-lg btn-block text-center huge"><i class="fa fa-inbox  fa-fw"></i><br>ためる</button>
+                    </div>
+            	</div>
+                
+            </div><!--end row-->
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            学業
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+	                        <div><canvas width="400" height="300" id="sample"></canvas></div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            キャリア・希望進路
+                        </div>
+                        <div class="panel-body">
+                            <div class="devideLine">業種　IT<div class="pull-right">  <i class="fa fa-caret-right"></i></div></div>
+                            <div class="devideLine">職種　システム<div class="pull-right">  <i class="fa fa-caret-right"></i></div></p>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            活動
+                        </div>
+                        <div class="panel-body">
+                            <div class="devideLine">就職活動中<div class="pull-right">  <i class="fa fa-caret-right"></i></div></div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+
+                </div>
+                <!-- /.col-lg-6 -->                
+            </div>
+            
+                
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    
+    
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    	<!-- for radarchart -->
+	<!--[if IE]><script type="text/javascript" src="../hakodate/excanvas/excanvas.js"></script><![endif]-->
+	<script type="text/javascript" src="../js/radar.js"></script>
+	<script type="text/javascript">
+	window.onload = function() {
+	  var rc = new html5jp.graph.radar("sample");
+	  if( ! rc ) { return; }
+	  var items = [
+	    ["II.自然科学", 5, 2, 4, 5, 3]
+	  ];
+	  var params = {
+	    aCap: ["II-A 物理", "II-B 物理実験", "II-C 化学", "II-D 化学実験", "II-E ライフサイエンス"]
+	  }
+	  rc.draw(items, params);
+	};
+	</script>
+
+
+    <!-- footerFixed -->
+    <script src="../js/footerFixed.js"></script>
+
+
+</body>
+
+</html>
