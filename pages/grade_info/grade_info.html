@@ -3,114 +3,117 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <title>学生情報　｜　ポートフォリオ</title>
+	<title>学生情報　｜　ポートフォリオ</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+	<link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
-    <link href="../../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+	<!-- MetisMenu CSS -->
+	<link href="../../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
-    <!--     <link href="../../dist/css/docs.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
+	<!--     <link href="../../dist/css/docs.min.css" rel="stylesheet">
      -->
 
-    <!-- Custom Fonts -->
-    <link href="../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Custom Fonts -->
+	<link href="../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Morris Charts CSS -->
-    <link href="../../bower_components/morrisjs/morris.css" rel="stylesheet">
+	<!-- Morris Charts CSS -->
+	<link href="../../bower_components/morrisjs/morris.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
 	<link href="../../css/bootstrap-datepicker.min.css" rel="stylesheet">
-    <link href="../../css/style.css" rel="stylesheet" type="text/css">
+	<link href="../../css/style.css" rel="stylesheet" type="text/css">
 
 
-    <!-- Custom CSS -->
-    <link href="../../dist/css/custom.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="../../dist/css/custom.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
-        <!-- jQuery -->
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- jQuery -->
+	<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="../../dist/js/sb-admin-2.js"></script>
-    
-    <!-- blockUI Javascript -->
-    <script type="text/javascript" src="../../js/jquery.blockUI.js"></script>
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
-<script>
-$(function($) {
-"use strict";
-    function test() {
-        $.ajax({ url: 'wait2.php', cache: false });
-    }
+	<!-- Custom Theme JavaScript -->
+	<script src="../../dist/js/sb-admin-2.js"></script>
 
-    // global hook - unblock UI when ajax request completes
-    $(document).ajaxStop($.unblockUI);
+	<!-- blockUI Javascript -->
+	<script type="text/javascript" src="../../js/jquery.blockUI.js"></script>
 
-    $('#main').tabs({
-        select: function(e, ui) {
-            var href = $(ui.tab).attr('href');
-            window.location.hash = href;
-        }
-    });
-	 $('#pageDemo4')..ready(function() {
-    		$('#demo4').click(function() {
-        	$.blockUI({
-            message: $('#tallContent'),
-            css: { top: '20%' }
-        });
+	<script>
+		$(function($) {
+					"use strict";
 
-        setTimeout($.unblockUI, 2000);
-    });
-});
+					function test() {
+						$.ajax({
+							url: 'wait2.php',
+							cache: false
+						});
+					}
 
+					// global hook - unblock UI when ajax request completes
+					$(document).ajaxStop($.unblockUI);
 
+					$('#main').tabs({
+						select: function(e, ui) {
+							var href = $(ui.tab).attr('href');
+							window.location.hash = href;
+						}
+					});
+					$('#pageDemo4')..ready(function() {
+						$('#demo4').click(function() {
+							$.blockUI({
+								message: $('#tallContent'),
+								css: {
+									top: '20%'
+								}
+							});
 
-</script>
+							setTimeout($.unblockUI, 2000);
+						});
+					});
+	</script>
 
 
 	<!--datepicker -->
 	<script src="../../js/bootstrap-datepicker.min.js"></script>
-    <script src="../../js/bootstrap-datepicker.ja.js"></script>
-    <script>
-    $('#date').datepicker({
-    format: "yyyy/mm/dd",
-    language: "ja",
-    autoclose: true,
-    orientation: "top auto"
-    });
-    </script>
+	<script src="../../js/bootstrap-datepicker.ja.js"></script>
+	<script>
+		$('#date').datepicker({
+			format: "yyyy/mm/dd",
+			language: "ja",
+			autoclose: true,
+			orientation: "top auto"
+		});
+	</script>
 
 
-    <!-- chart -->
-    <script src="../../js/Chart.min.js"></script>
+	<!-- chart -->
+	<script src="../../js/Chart.min.js"></script>
 
 
 </head>
@@ -119,59 +122,60 @@ $(function($) {
 
 <body>
 
-    <div id="wrapper">
+	<div id="wrapper">
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-        
-            <div class="navbar-header">
-                    <a href="#" class="navbar-brand">
-                   	<img src="../../images/index.png" width="40" height="40" class="pull-left imgArea"/>
-                    </a>                    
-                    <div class="navbar-text">
-                    	<img src="../../images/sample_student.jpg" width="35" height="40" class="img-circle pull-left imgArea">
-                    	<div class="imgside text-nowrap">こんにちは、田中 太郎さん!</div>
-                    </div>
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
-                    	<span class="sr-only">メニュー</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">
+					<img src="../../images/index.png" width="40" height="40" class="pull-left imgArea" />
+				</a>
+				<div class="navbar-text">
+					<img src="../../images/sample_student.jpg" width="35" height="40" class="img-circle pull-left imgArea">
+					<div class="imgside text-nowrap">こんにちは、田中 太郎さん!</div>
+				</div>
 
-            </div><!-- end of navbar-header -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+					<span class="sr-only">メニュー</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 
-            <div id="gnavi" class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="../portforio_20151013.html">ポートフォリオ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../tools_20151001-03.html">ツール</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../login.html">
+			</div>
+			<!-- end of navbar-header -->
+
+			<div id="gnavi" class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="../portforio_20151013.html">ポートフォリオ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../tools_20151001-03.html">ツール</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../login.html">
 							<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                    </ul>
-            	</div>
-                
-                
+						</a>
+					</li>
+				</ul>
+			</div>
 
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="../portforio_20151013.html"><i class="fa fa-dashboard fa-fw"></i> TOP</a>
-                        </li>
-                        <li>
-                            <a href="../goal/goal.html"><i class="fa fa-flag fa-fw"></i> 目標管理</a>
-                        </li>
-                        <li>
-                            <a href="../student_info/student_info.html"><i class="fa fa-male fa-fw"></i> 基本情報</a>
-                            <!--<ul class="nav nav-second-level">
+
+
+			<div class="navbar-default sidebar" role="navigation">
+				<div class="sidebar-nav navbar-collapse">
+					<ul class="nav" id="side-menu">
+						<li>
+							<a href="../portforio_20151013.html"><i class="fa fa-dashboard fa-fw"></i> TOP</a>
+						</li>
+						<li>
+							<a href="../goal/goal.html"><i class="fa fa-flag fa-fw"></i> 目標管理</a>
+						</li>
+						<li>
+							<a href="../student_info/student_info.html"><i class="fa fa-male fa-fw"></i> 基本情報</a>
+							<!--<ul class="nav nav-second-level">
                                 <li>
                                     <a href="flot.html">基本情報</a>
                                 </li>
@@ -185,555 +189,561 @@ $(function($) {
                                     <a href="morris.html">指導履歴</a>
                                 </li>
                              </ul>-->
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="../timeline/timeline.html"><i class="fa fa-signal fa-fw"></i> 成果</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-signal fa-fw"></i> 成績</a>
-                        </li>
-                        <li>
-                            <a href="../career_info/career_info.html"><i class="fa fa-compass fa-fw"></i> キャリア</a>
-                        </li>
+							<!-- /.nav-second-level -->
+						</li>
+						<li>
+							<a href="../timeline/timeline.html"><i class="fa fa-signal fa-fw"></i> 成果</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-signal fa-fw"></i> 成績</a>
+						</li>
+						<li>
+							<a href="../career_info/career_info.html"><i class="fa fa-compass fa-fw"></i> キャリア</a>
+						</li>
 
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
+					</ul>
+				</div>
+				<!-- /.sidebar-collapse -->
+			</div>
+			<!-- /.navbar-static-side -->
+		</nav>
 
-        <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="container-fluid">
-            <h1></h1>
-            
-            
-            
-                <div class="row">
-                    <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            学業情報
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#year2014" data-toggle="tab">2014</a>
-                                </li>
-                                <li><a href="#year2013" data-toggle="tab">2013</a>
-                                </li>
-                                <li><a href="#year2012" data-toggle="tab">2012</a>
-                                </li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content"><h4></h4>
-
-                                <div class="tab-pane fade in active" id="year2014">
-                                        <h4></h4>
-                                        <div class="row">
-                                        	<div class="col-xs-12 col-sm-6 col-lg-4">
-                                            	<div class="text-center">
-
-                                                    <div class="form-group visible-xs">
-                                                        <label></label>
-                                                        <select class="form-control">
-                                                            <option>I.数学</option>
-                                                            <option>I.自然科学</option>
-                                                            <option>I.人文・社会</option>
-                                                            <option>I.工学基礎</option>
-                                                            <option>I.分野別の専門工学</option>
-                                                            <option>I.分野別の光学実験・実習能力</option>
-                                                            <option>I.専門的能力の実質化</option>
-                                                        </select>
-                                                    </div>
-                                            <table class="table table-striped hidden-xs">
-                                                <tbody>
-                                                    <tr>
-                                                        <td><a href="#">I.数学</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.自然科学</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.人文・社会</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.工学基礎</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.分野別の専門工学</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.分野別の光学実験・実習能力</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.専門的能力の実質化</a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+		<!-- Page Content -->
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<h1></h1>
 
 
 
-                                                </div>
-                                            </div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								学業情報
+							</div>
+							<!-- /.panel-heading -->
+							<div class="panel-body">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#year2014" data-toggle="tab">2014</a>
+									</li>
+									<li><a href="#year2013" data-toggle="tab">2013</a>
+									</li>
+									<li><a href="#year2012" data-toggle="tab">2012</a>
+									</li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<h4></h4>
+
+									<div class="tab-pane fade in active" id="year2014">
+										<h4></h4>
+										<div class="row">
+											<div class="col-xs-12 col-sm-6 col-lg-4">
+												<div class="text-center">
+
+													<div class="form-group visible-xs">
+														<label></label>
+														<select class="form-control">
+															<option>I.数学</option>
+															<option>I.自然科学</option>
+															<option>I.人文・社会</option>
+															<option>I.工学基礎</option>
+															<option>I.分野別の専門工学</option>
+															<option>I.分野別の光学実験・実習能力</option>
+															<option>I.専門的能力の実質化</option>
+														</select>
+													</div>
+													<table class="table table-striped hidden-xs">
+														<tbody>
+															<tr>
+																<td><a href="#">I.数学</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.自然科学</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.人文・社会</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.工学基礎</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.分野別の専門工学</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.分野別の光学実験・実習能力</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.専門的能力の実質化</a></td>
+															</tr>
+														</tbody>
+													</table>
+
+
+
+												</div>
+											</div>
 
 											<div class="col-xs-12 col-sm-6 col-lg-4">
-                                            	<div>
-                                                    
-                                                    <div style="width:100%">
-                                                        <canvas id="canvas" height="300" width="300"></canvas>
-                                                    </div>
-                                            
-                                            
-                                                <script>
-                                                var radarChartData = {
-                                                    labels: ["II-A物理", "II-B物理実験", "II-C化学", "II-D化学実験", "II-Eライフサイエンス"],
-                                                    datasets: [
-                                                        {
-                                                            label: "My First dataset",
-                                                            fillColor: "rgba(220,220,220,0.2)",
-                                                            strokeColor: "rgba(220,220,220,1)",
-                                                            pointColor: "rgba(220,220,220,1)",
-                                                            pointStrokeColor: "#fff",
-                                                            pointHighlightFill: "#fff",
-                                                            pointHighlightStroke: "rgba(220,220,220,1)",
-                                                            data: [65,59,90,81,56]
-                                                        },
-                                                        {
-                                                            label: "My Second dataset",
-                                                            fillColor: "rgba(151,187,205,0.2)",
-                                                            strokeColor: "rgba(151,187,205,1)",
-                                                            pointColor: "rgba(151,187,205,1)",
-                                                            pointStrokeColor: "#fff",
-                                                            pointHighlightFill: "#fff",
-                                                            pointHighlightStroke: "rgba(151,187,205,1)",
-                                                            data: [28,48,40,19,96]
-                                                        }
-                                                    ]
-                                                };
-                                            
-                                                window.onload = function(){
-                                                    window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
-                                                        responsive: true
-                                                    });
-                                                }
-                                            
-                                                </script>
-                                            
-                                                    
-                                                </div>
-                                            </div>
-                                            
-                                            
-                                        </div><!--end row-->
-                                </div>
+												<div>
 
-                                <div class="tab-pane fade" id="year2013">
-                                        <h4></h4>
-                                        <div class="row">
-                                        	<div class="col-xs-12 col-sm-6 col-lg-4">
-                                            	<div class="text-center">
+													<div style="width:100%">
+														<canvas id="canvas" height="300" width="300"></canvas>
+													</div>
 
-                                                    <div class="form-group visible-xs">
-                                                        <label></label>
-                                                        <select class="form-control">
-                                                            <option>I.数学</option>
-                                                            <option>I.自然科学</option>
-                                                            <option>I.人文・社会</option>
-                                                            <option>I.工学基礎</option>
-                                                            <option>I.分野別の専門工学</option>
-                                                            <option>I.分野別の光学実験・実習能力</option>
-                                                            <option>I.専門的能力の実質化</option>
-                                                        </select>
-                                                    </div>
-                                            <table class="table table-striped hidden-xs">
-                                                <tbody>
-                                                    <tr>
-                                                        <td><a href="#">I.数学</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.自然科学</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.人文・社会</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.工学基礎</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.分野別の専門工学</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.分野別の光学実験・実習能力</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.専門的能力の実質化</a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+
+													<script>
+														var radarChartData = {
+															labels: ["II-A物理", "II-B物理実験", "II-C化学", "II-D化学実験", "II-Eライフサイエンス"],
+															datasets: [{
+																label: "My First dataset",
+																fillColor: "rgba(220,220,220,0.2)",
+																strokeColor: "rgba(220,220,220,1)",
+																pointColor: "rgba(220,220,220,1)",
+																pointStrokeColor: "#fff",
+																pointHighlightFill: "#fff",
+																pointHighlightStroke: "rgba(220,220,220,1)",
+																data: [65, 59, 90, 81, 56]
+															}, {
+																label: "My Second dataset",
+																fillColor: "rgba(151,187,205,0.2)",
+																strokeColor: "rgba(151,187,205,1)",
+																pointColor: "rgba(151,187,205,1)",
+																pointStrokeColor: "#fff",
+																pointHighlightFill: "#fff",
+																pointHighlightStroke: "rgba(151,187,205,1)",
+																data: [28, 48, 40, 19, 96]
+															}]
+														};
+
+														window.onload = function() {
+															window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
+																responsive: true
+															});
+														}
+													</script>
+
+
+												</div>
+											</div>
+
+
+										</div>
+										<!--end row-->
+									</div>
+
+									<div class="tab-pane fade" id="year2013">
+										<h4></h4>
+										<div class="row">
+											<div class="col-xs-12 col-sm-6 col-lg-4">
+												<div class="text-center">
+
+													<div class="form-group visible-xs">
+														<label></label>
+														<select class="form-control">
+															<option>I.数学</option>
+															<option>I.自然科学</option>
+															<option>I.人文・社会</option>
+															<option>I.工学基礎</option>
+															<option>I.分野別の専門工学</option>
+															<option>I.分野別の光学実験・実習能力</option>
+															<option>I.専門的能力の実質化</option>
+														</select>
+													</div>
+													<table class="table table-striped hidden-xs">
+														<tbody>
+															<tr>
+																<td><a href="#">I.数学</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.自然科学</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.人文・社会</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.工学基礎</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.分野別の専門工学</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.分野別の光学実験・実習能力</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.専門的能力の実質化</a></td>
+															</tr>
+														</tbody>
+													</table>
 
 
 
-                                                </div>
-                                            </div>
+												</div>
+											</div>
 
 											<div class="col-xs-12 col-sm-6 col-lg-4">
-                                            	<div>
-                                                    
-                                                    <div style="width:100%">
-                                                        <canvas id="canvas" height="300" width="300"></canvas>
-                                                    </div>
-                                            
-                                            
-                                                <script>
-                                                var radarChartData = {
-                                                    labels: ["II-A物理", "II-B物理実験", "II-C化学", "II-D化学実験", "II-Eライフサイエンス"],
-                                                    datasets: [
-                                                        {
-                                                            label: "My First dataset",
-                                                            fillColor: "rgba(220,220,220,0.2)",
-                                                            strokeColor: "rgba(220,220,220,1)",
-                                                            pointColor: "rgba(220,220,220,1)",
-                                                            pointStrokeColor: "#fff",
-                                                            pointHighlightFill: "#fff",
-                                                            pointHighlightStroke: "rgba(220,220,220,1)",
-                                                            data: [65,59,90,81,56]
-                                                        },
-                                                        {
-                                                            label: "My Second dataset",
-                                                            fillColor: "rgba(151,187,205,0.2)",
-                                                            strokeColor: "rgba(151,187,205,1)",
-                                                            pointColor: "rgba(151,187,205,1)",
-                                                            pointStrokeColor: "#fff",
-                                                            pointHighlightFill: "#fff",
-                                                            pointHighlightStroke: "rgba(151,187,205,1)",
-                                                            data: [28,48,40,19,96]
-                                                        }
-                                                    ]
-                                                };
-                                            
-                                                window.onload = function(){
-                                                    window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
-                                                        responsive: true
-                                                    });
-                                                }
-                                            
-                                                </script>
-                                            
-                                                    
-                                                </div>
-                                            </div>
-                                            
-                                            
-                                        </div><!--end row-->
-                                </div>
+												<div>
 
-                                <div class="tab-pane fade" id="year2012">
-                                        <h4></h4>
-                                        <div class="row">
-                                        	<div class="col-xs-12 col-sm-6 col-lg-4">
-                                            	<div class="text-center">
+													<div style="width:100%">
+														<canvas id="canvas" height="300" width="300"></canvas>
+													</div>
 
-                                                    <div class="form-group visible-xs">
-                                                        <label></label>
-                                                        <select class="form-control">
-                                                            <option>I.数学</option>
-                                                            <option>I.自然科学</option>
-                                                            <option>I.人文・社会</option>
-                                                            <option>I.工学基礎</option>
-                                                            <option>I.分野別の専門工学</option>
-                                                            <option>I.分野別の光学実験・実習能力</option>
-                                                            <option>I.専門的能力の実質化</option>
-                                                        </select>
-                                                    </div>
-                                            <table class="table table-striped hidden-xs">
-                                                <tbody>
-                                                    <tr>
-                                                        <td><a href="#">I.数学</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.自然科学</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.人文・社会</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.工学基礎</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.分野別の専門工学</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.分野別の光学実験・実習能力</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#">I.専門的能力の実質化</a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+
+													<script>
+														var radarChartData = {
+															labels: ["II-A物理", "II-B物理実験", "II-C化学", "II-D化学実験", "II-Eライフサイエンス"],
+															datasets: [{
+																label: "My First dataset",
+																fillColor: "rgba(220,220,220,0.2)",
+																strokeColor: "rgba(220,220,220,1)",
+																pointColor: "rgba(220,220,220,1)",
+																pointStrokeColor: "#fff",
+																pointHighlightFill: "#fff",
+																pointHighlightStroke: "rgba(220,220,220,1)",
+																data: [65, 59, 90, 81, 56]
+															}, {
+																label: "My Second dataset",
+																fillColor: "rgba(151,187,205,0.2)",
+																strokeColor: "rgba(151,187,205,1)",
+																pointColor: "rgba(151,187,205,1)",
+																pointStrokeColor: "#fff",
+																pointHighlightFill: "#fff",
+																pointHighlightStroke: "rgba(151,187,205,1)",
+																data: [28, 48, 40, 19, 96]
+															}]
+														};
+
+														window.onload = function() {
+															window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
+																responsive: true
+															});
+														}
+													</script>
+
+
+												</div>
+											</div>
+
+
+										</div>
+										<!--end row-->
+									</div>
+
+									<div class="tab-pane fade" id="year2012">
+										<h4></h4>
+										<div class="row">
+											<div class="col-xs-12 col-sm-6 col-lg-4">
+												<div class="text-center">
+
+													<div class="form-group visible-xs">
+														<label></label>
+														<select class="form-control">
+															<option>I.数学</option>
+															<option>I.自然科学</option>
+															<option>I.人文・社会</option>
+															<option>I.工学基礎</option>
+															<option>I.分野別の専門工学</option>
+															<option>I.分野別の光学実験・実習能力</option>
+															<option>I.専門的能力の実質化</option>
+														</select>
+													</div>
+													<table class="table table-striped hidden-xs">
+														<tbody>
+															<tr>
+																<td><a href="#">I.数学</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.自然科学</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.人文・社会</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.工学基礎</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.分野別の専門工学</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.分野別の光学実験・実習能力</a></td>
+															</tr>
+															<tr>
+																<td><a href="#">I.専門的能力の実質化</a></td>
+															</tr>
+														</tbody>
+													</table>
 
 
 
-                                                </div>
-                                            </div>
+												</div>
+											</div>
 
 											<div class="col-xs-12 col-sm-6 col-lg-4">
-                                            	<div>
-                                                    
-                                                    <div style="width:100%">
-                                                        <canvas id="canvas" height="300" width="300"></canvas>
-                                                    </div>
-                                            
-                                            
-                                                <script>
-                                                var radarChartData = {
-                                                    labels: ["II-A物理", "II-B物理実験", "II-C化学", "II-D化学実験", "II-Eライフサイエンス"],
-                                                    datasets: [
-                                                        {
-                                                            label: "My First dataset",
-                                                            fillColor: "rgba(220,220,220,0.2)",
-                                                            strokeColor: "rgba(220,220,220,1)",
-                                                            pointColor: "rgba(220,220,220,1)",
-                                                            pointStrokeColor: "#fff",
-                                                            pointHighlightFill: "#fff",
-                                                            pointHighlightStroke: "rgba(220,220,220,1)",
-                                                            data: [65,59,90,81,56]
-                                                        },
-                                                        {
-                                                            label: "My Second dataset",
-                                                            fillColor: "rgba(151,187,205,0.2)",
-                                                            strokeColor: "rgba(151,187,205,1)",
-                                                            pointColor: "rgba(151,187,205,1)",
-                                                            pointStrokeColor: "#fff",
-                                                            pointHighlightFill: "#fff",
-                                                            pointHighlightStroke: "rgba(151,187,205,1)",
-                                                            data: [28,48,40,19,96]
-                                                        }
-                                                    ]
-                                                };
-                                            
-                                                window.onload = function(){
-                                                    window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
-                                                        responsive: true
-                                                    });
-                                                }
-                                            
-                                                </script>
-                                            
-                                                    
-                                                </div>
-                                            </div>
-                                            
-                                            
-                                        </div><!--end row-->
-                                </div>
-                                
-                            </div>
-<!-- 5-2を実現 -->
-                            <button id="demo4">Run</button><td>Tall Content</td>
+												<div>
+
+													<div style="width:100%">
+														<canvas id="canvas" height="300" width="300"></canvas>
+													</div>
 
 
-       <div id="tallContent" style="display:none">
-            <h1地球と大地</h1>
-            <h1>人類を囲む生態系</h1>
-            <h1>地球環境安全　保全活動</h1>
-        </div>
- 
-                            
-<!-- /5-2実現終了　-->
-                                                        <!-- Nav tabs -->
-                            <ul class="nav nav-tabs">
-                                <li class="active text-center"><a href="#grade2014" data-toggle="tab">履修科目<p><h3>18<small>科目</small></h3></p></a>
-                                </li>
-                                <li><a href="#arch2014" data-toggle="tab">成果<p><h3>20<small>件</small></h3></p></a>
-                                </li>
-                            </ul>
+													<script>
+														var radarChartData = {
+															labels: ["II-A物理", "II-B物理実験", "II-C化学", "II-D化学実験", "II-Eライフサイエンス"],
+															datasets: [{
+																label: "My First dataset",
+																fillColor: "rgba(220,220,220,0.2)",
+																strokeColor: "rgba(220,220,220,1)",
+																pointColor: "rgba(220,220,220,1)",
+																pointStrokeColor: "#fff",
+																pointHighlightFill: "#fff",
+																pointHighlightStroke: "rgba(220,220,220,1)",
+																data: [65, 59, 90, 81, 56]
+															}, {
+																label: "My Second dataset",
+																fillColor: "rgba(151,187,205,0.2)",
+																strokeColor: "rgba(151,187,205,1)",
+																pointColor: "rgba(151,187,205,1)",
+																pointStrokeColor: "#fff",
+																pointHighlightFill: "#fff",
+																pointHighlightStroke: "rgba(151,187,205,1)",
+																data: [28, 48, 40, 19, 96]
+															}]
+														};
 
-                             <div class="tab-content">
-                               <div class="tab-pane fade  in active" id="grade2014">
-                                        <div class="row">
-                                        <h4></h4>
-                                        <div class="panel panel-default" style="margin:15px;">
-                                        <div class="panel-body">
-
-<!-- Table -->
-      <table class="table">
-        <thead>
-          <tr>
-            <th>No.</th>
-            <th>科目名</th>
-            <th>成績</th>
-            <th>欠課時間</th>
-            <th>前期中間</th>
-            <th>前期期末</th>
-            <th>後期中間</th>
-            <th>後期期末</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>数学I</td>
-            <td>優</td>
-            <td>0</td>
-            <td>50</td>
-            <td>80</td>
-            <td>90</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>英語I</td>
-            <td>優</td>
-            <td>0</td>
-            <td>50</td>
-            <td>80</td>
-            <td>90</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>国語I</td>
-            <td>優</td>
-            <td>0</td>
-            <td>50</td>
-            <td>80</td>
-            <td>90</td>
-            <td>100</td>
-          </tr>
-        </tbody>
-      </table>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="arch2014">
-                                        <div class="row"><h4></h4>
-                                        <div class="panel panel-default" style="margin:15px;">
-                                        <div class="panel-body">
-								<div class="alt-table-responsive">
-                                            <table class="table table-striped">
-                                                <tbody>
-                                                    <tr>
-                                                      <td>
-                                                      <button type="button" class="btn btn-success btn-circle">
-                                                            	<i class="fa fa-building-o"></i>
-                                                      </button>
-                                                           &nbsp;SCSK会社説明会決定!!!
-                                                      <a data-toggle="collapse" data-parent="#accordion" href="#activity"  aria-expanded="false">
-                                                      <div class="pull-right">
-                                                            	<button type="button" class="btn btn-default btn-circle left">
-                                                            	<i class="fa fa-level-down text-primary"></i>
-                                                            	</button>
-													  </a>
-                                                            <button type="button" class="btn btn-default btn-circle left">
-                                                            	<i class="fa fa-comments text-primary"></i>
-                                                            </button>
-													  </div>
-													  <div id="activity" class="panel-collapse collapse" aria-expanded="false">
-													  <div class="panel-body">
-								                              <h5><span class="label label-primary">日時</span>&nbsp;2015年10月10日</h5>
-								                              <h5><span class="label label-primary">内容</span>&nbsp;申し込んでいた説明会の参加案内が来た。</h5>
-								                              <h5><span class="label label-default">添付</span>&nbsp;<a href="#">当日案内.pdf</a></h5>
-                                                            <div class="pull-right">
-                                                            <button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
- 															</div>
-
-								                   	  </div>
-								                   	  </div>
-													</td>
-                                                    </tr>
-                                                    
-                                                    <tr>
-                                                      <td>
-                                                            <button type="button" class="btn btn-danger btn-circle">
-                                                            <i class="fa fa-gear"></i></button>
-                                                            &nbsp;基本情報処理試験合格
-                                                            <div class="pull-right">
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-level-down text-primary"></i></button>
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-comments text-primary"></i></button>
-															</div>
-													  </td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td>
-                                                            <button type="button" class="btn btn-award btn-circle"><i class="fa fa-bookmark-o"></i></button>
-                                                            &nbsp;&nbsp;ロボコン地区大会優勝<div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-level-down text-primary"></i></button>
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-comments text-primary"></i></button>
-															</div></td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td>
-                                                            <button type="button" class="btn btn-success btn-circle"><i class="fa fa-building-o"></i></button>&nbsp;&nbsp;SCSKにエントリーしてみた<div class="pull-right"><button type="button" class="btn btn-default btn-circle left"><i class="fa fa-level-down text-primary"></i></button>
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-comments text-primary"></i></button>
-															</div></td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td>
-													  <button type="button" class="btn btn-info btn-circle">
-                                                            	<i class="fa fa-files-o"></i>
-                                                      </button>
-                                                           &nbsp;数学演習課題提出
-                                                      <a data-toggle="collapse" data-parent="#accordion" href="#attempt01"  aria-expanded="false">
-                                                      <div class="pull-right">
-                                                            	<button type="button" class="btn btn-default btn-circle left">
-                                                            	<i class="fa fa-level-down text-primary"></i>
-                                                            	</button>
-													  </a>
-                                                            <button type="button" class="btn btn-default btn-circle left">
-                                                            	<i class="fa fa-comments text-primary"></i>
-                                                            </button>
-													  </div>
-													  <div id="attempt01" class="panel-collapse collapse" aria-expanded="false">
-													  <div class="panel-body">
-								                              <h5><span class="label label-primary">日時</span>&nbsp;2015年7月10日</h5>
-								                              <h5><span class="label label-primary">内容</span>&nbsp;グループでの成果を登録しておく。</h5>
-								                              <h5><span class="label label-default">添付</span>&nbsp;<a href="#">グループA答案.pdf</a></h5>
-                                                            <div class="pull-right">
-                                                            <button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-                                                            <button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
- 															</div>
-
-								                   	  </div>
-								                   	  </div>
-
-															
-													  </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                            </div>
-
-                            </div>
-                            </div>
-                            </div>
-                            </div>
+														window.onload = function() {
+															window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
+																responsive: true
+															});
+														}
+													</script>
 
 
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
+												</div>
+											</div>
 
 
-                    </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container-fluid -->
-        </div>
-        <!-- /#page-wrapper -->
+										</div>
+										<!--end row-->
+									</div>
 
-    </div>
-    <!-- /#wrapper -->
+								</div>
+								<!-- 5-2を実現 -->
+								<button id="demo4">Run</button>
+								<td>Tall Content</td>
+
+
+								<div id="tallContent" style="display:none">
+									<h1地球と大地</h1>
+										<h1>人類を囲む生態系</h1>
+										<h1>地球環境安全　保全活動</h1>
+								</div>
+
+
+								<!-- /5-2実現終了　-->
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs">
+									<li class="active text-center"><a href="#grade2014" data-toggle="tab">履修科目<p><h3>18<small>科目</small></h3></p></a>
+									</li>
+									<li><a href="#arch2014" data-toggle="tab">成果<p><h3>20<small>件</small></h3></p></a>
+									</li>
+								</ul>
+
+								<div class="tab-content">
+									<div class="tab-pane fade  in active" id="grade2014">
+										<div class="row">
+											<h4></h4>
+											<div class="panel panel-default" style="margin:15px;">
+												<div class="panel-body">
+
+													<!-- Table -->
+													<table class="table">
+														<thead>
+															<tr>
+																<th>No.</th>
+																<th>科目名</th>
+																<th>成績</th>
+																<th>欠課時間</th>
+																<th>前期中間</th>
+																<th>前期期末</th>
+																<th>後期中間</th>
+																<th>後期期末</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">1</th>
+																<td>数学I</td>
+																<td>優</td>
+																<td>0</td>
+																<td>50</td>
+																<td>80</td>
+																<td>90</td>
+																<td>100</td>
+															</tr>
+															<tr>
+																<th scope="row">2</th>
+																<td>英語I</td>
+																<td>優</td>
+																<td>0</td>
+																<td>50</td>
+																<td>80</td>
+																<td>90</td>
+																<td>100</td>
+															</tr>
+															<tr>
+																<th scope="row">3</th>
+																<td>国語I</td>
+																<td>優</td>
+																<td>0</td>
+																<td>50</td>
+																<td>80</td>
+																<td>90</td>
+																<td>100</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="tab-pane fade" id="arch2014">
+										<div class="row">
+											<h4></h4>
+											<div class="panel panel-default" style="margin:15px;">
+												<div class="panel-body">
+													<div class="alt-table-responsive">
+														<table class="table table-striped">
+															<tbody>
+																<tr>
+																	<td>
+																		<button type="button" class="btn btn-success btn-circle">
+																			<i class="fa fa-building-o"></i>
+																		</button>
+																		&nbsp;SCSK会社説明会決定!!!
+																		<a data-toggle="collapse" data-parent="#accordion" href="#activity" aria-expanded="false">
+																			<div class="pull-right">
+																				<button type="button" class="btn btn-default btn-circle left">
+																					<i class="fa fa-level-down text-primary"></i>
+																				</button>
+																		</a>
+																		<button type="button" class="btn btn-default btn-circle left">
+																			<i class="fa fa-comments text-primary"></i>
+																		</button>
+																		</div>
+																		<div id="activity" class="panel-collapse collapse" aria-expanded="false">
+																			<div class="panel-body">
+																				<h5>
+																					<span class="label label-primary">日時</span>&nbsp;2015年10月10日</h5>
+																				<h5>
+																					<span class="label label-primary">内容</span>&nbsp;申し込んでいた説明会の参加案内が来た。</h5>
+																				<h5>
+																					<span class="label label-default">添付</span>&nbsp;<a href="#">当日案内.pdf</a></h5>
+																				<div class="pull-right">
+																					<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
+																					<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
+																				</div>
+
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+
+																<tr>
+																	<td>
+																		<button type="button" class="btn btn-danger btn-circle">
+																			<i class="fa fa-gear"></i></button>
+																		&nbsp;基本情報処理試験合格
+																		<div class="pull-right">
+																			<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-level-down text-primary"></i></button>
+																			<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-comments text-primary"></i></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<button type="button" class="btn btn-award btn-circle"><i class="fa fa-bookmark-o"></i></button>
+																		&nbsp;&nbsp;ロボコン地区大会優勝
+																		<div class="pull-right">
+																			<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-level-down text-primary"></i></button>
+																			<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-comments text-primary"></i></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<button type="button" class="btn btn-success btn-circle"><i class="fa fa-building-o"></i></button>&nbsp;&nbsp;SCSKにエントリーしてみた
+																		<div class="pull-right">
+																			<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-level-down text-primary"></i></button>
+																			<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-comments text-primary"></i></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<button type="button" class="btn btn-info btn-circle">
+																			<i class="fa fa-files-o"></i>
+																		</button>
+																		&nbsp;数学演習課題提出
+																		<a data-toggle="collapse" data-parent="#accordion" href="#attempt01" aria-expanded="false">
+																			<div class="pull-right">
+																				<button type="button" class="btn btn-default btn-circle left">
+																					<i class="fa fa-level-down text-primary"></i>
+																				</button>
+																		</a>
+																		<button type="button" class="btn btn-default btn-circle left">
+																			<i class="fa fa-comments text-primary"></i>
+																		</button>
+																		</div>
+																		<div id="attempt01" class="panel-collapse collapse" aria-expanded="false">
+																			<div class="panel-body">
+																				<h5>
+																					<span class="label label-primary">日時</span>&nbsp;2015年7月10日</h5>
+																				<h5>
+																					<span class="label label-primary">内容</span>&nbsp;グループでの成果を登録しておく。</h5>
+																				<h5>
+																					<span class="label label-default">添付</span>&nbsp;<a href="#">グループA答案.pdf</a></h5>
+																				<div class="pull-right">
+																					<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
+																					<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
+																				</div>
+
+																			</div>
+																		</div>
+
+
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<!-- /.panel-body -->
+						</div>
+						<!-- /.panel -->
+
+
+					</div>
+					<!-- /.col-lg-12 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container-fluid -->
+		</div>
+		<!-- /#page-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
 
 
 </body>
