@@ -52,82 +52,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<!-- jQuery -->
-	<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-	<!-- Metis Menu Plugin JavaScript -->
-	<script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-	<!-- Custom Theme JavaScript -->
-	<script src="../../dist/js/sb-admin-2.js"></script>
-
-	<!--datepicker -->
-	<script src="../../js/bootstrap-datepicker.min.js"></script>
-	<script src="../../js/bootstrap-datepicker.ja.js"></script>
-	<script>
-		$('#date').datepicker({
-			format: "yyyy/mm/dd",
-			language: "ja",
-			autoclose: true,
-			orientation: "top auto"
-		});
-	</script>
-
-	<script type="text/javascript">
-		$(window).on('load', function() {
-			$('.selectpicker').selectpicker({
-				'selectedText': 'cat'
-			});
-		});
-	</script>
-
-
-	<script src="../../dist/js/bootstrap-select.js"></script>
-
-	<script type="text/javascript">
-		$(window).on('load', function() {
-			$('.selectpicker').selectpicker({
-				'selectedText': 'cat'
-			});
-		});
-	</script>
-
-	<!-- 活動記録分岐 -->
-	<script type="text/javascript">
-		function inputAction() {
-			if (document.getElementById('changeSelect')) {
-				id = document.getElementById('changeSelect').value;
-				if (id == 'achifact') {
-					document.getElementById('achifact-form').style.display = "";
-					document.getElementById('prize-form').style.display = "none";
-					document.getElementById('certification-form').style.display = "none";
-					document.getElementById('activity-form').style.display = "none";
-				} else if (id == 'prize') {
-					document.getElementById('achifact-form').style.display = "none";
-					document.getElementById('prize-form').style.display = "";
-					document.getElementById('certification-form').style.display = "none";
-					document.getElementById('activity-form').style.display = "none";
-				} else if (id == 'certification') {
-					document.getElementById('achifact-form').style.display = "none";
-					document.getElementById('prize-form').style.display = "none";
-					document.getElementById('certification-form').style.display = "";
-					document.getElementById('activity-form').style.display = "none";
-				} else if (id == 'activity') {
-					document.getElementById('achifact-form').style.display = "none";
-					document.getElementById('prize-form').style.display = "none";
-					document.getElementById('certification-form').style.display = "none";
-					document.getElementById('activity-form').style.display = "";
-				}
-			}
-		}
-		window.onload = entryChange2;
-	</script>
-
-
-
 
 </head>
 
@@ -245,7 +169,7 @@
 											<div class="form-group">
 												<label>タイプ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
 												<select id="changeSelect" name="hoge" onchange="inputAction();">
-													<option value="achifact">学習成果</option>
+													<option value="achifact" selected>学習成果</option>
 													<option value="prize">受賞歴</option>
 													<option value="certification">取得資格</option>
 													<option value="activity">就職進学活動</option>
@@ -259,8 +183,8 @@
 												</div>
 												<div class="form-group">
 													<label>実施日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
-													<div class="input-group date" id="date">
-														<input type="text" class="form-control">
+													<div class="input-group" id="date">
+														<input type="text" class="form-control datepick">
 														<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 													</div>
 												</div>
@@ -289,7 +213,7 @@
 												<div class="form-group">
 													<label>受賞日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
 													<div class="input-group date" id="date">
-														<input type="text" class="form-control">
+														<input type="text" class="form-control datepick">
 														<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 													</div>
 													<div class="form-group">
@@ -311,7 +235,7 @@
 												<div class="form-group">
 													<label>取得日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
 													<div class="input-group date" id="date">
-														<input type="text" class="form-control">
+														<input type="text" class="form-control datepick">
 														<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 													</div>
 													<div class="form-group">
@@ -349,7 +273,7 @@
 												<div class="form-group">
 													<label>実施日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
 													<div class="input-group date" id="date">
-														<input type="text" class="form-control">
+														<input type="text" class="form-control datepick">
 														<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 													</div>
 													<div class="form-group">
@@ -400,11 +324,11 @@
 										<a href="#messages" data-toggle="tab" data-placement="top" title="受賞歴">
 											<button type="button" class="btn btn-award btn-circle">
 												<i class="fa fa-bookmark-o"></i>
-                      </button>
+											</button>
 										</a>
 									</li>
 									<li>
-										<a href="#settings" data-toggle="tab " data-placement="top" title="学習成果">
+										<a href="#settings" data-toggle="tab" data-placement="top" title="学習成果">
 											<button type="button" class="btn btn-info btn-circle">
 												<i class="fa fa-files-o"></i>
 											</button>
@@ -413,31 +337,31 @@
 								</ul>
 							</div>
 
-							<div class="btn-group" style="margin:15px;">
-								<label>年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
-								<select class="selectpicker">
-									<option value="1st">
-										2014
-									</option>
-									<option value="2nd">
-										2015
-									</option>
-									<option value="3rd">
-										2016
-									</option>
-									<option value="4th">
-										2017
-									</option>
-									<option value="5th">
-										2018
-									</option>
-								</select>
-							</div>
 
 							<h6></h6>
 
 							<div class="panel panel-default" style="margin:15px;">
 								<div class="panel-body">
+									<div class="btn-group" style="margin:15px;">
+										<label>年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+										<select class="selectpicker">
+											<option value="1st">
+												2014
+											</option>
+											<option value="2nd">
+												2015
+											</option>
+											<option value="3rd">
+												2016
+											</option>
+											<option value="4th">
+												2017
+											</option>
+											<option value="5th">
+												2018
+											</option>
+										</select>
+									</div>
 									<ul class="timeline">
 										<li>
 											<div class="timeline-badge info"><i class="fa fa-files-o"></i>
@@ -459,8 +383,8 @@
 													<h5>
 														<span class="label label-default">添付</span>&nbsp;<a href="#">グループA答案.pdf</a></h5>
 													<div class="pull-right">
-														<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-														<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
+														<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#staticModal2"><i class="fa fa-pencil text-primary"></i></button>
+														<button type="button" class="delconf btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
 													</div>
 												</div>
 										</li>
@@ -484,8 +408,8 @@
 													<h5>
 														<span class="label label-default">添付</span>&nbsp;<a href="#">説明会資料.pdf</a></h5>
 													<div class="pull-right">
-														<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-														<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
+														<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#staticModal2"><i class="fa fa-pencil text-primary"></i></button>
+														<button type="button" class="delconf btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
 													</div>
 												</div>
 										</li>
@@ -511,8 +435,8 @@
 													<h5>
 														<span class="label label-default">添付</span>&nbsp;<a href="#">記念撮影.jpg</a></h5>
 													<div class="pull-right">
-														<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-														<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
+														<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#staticModal2"><i class="fa fa-pencil text-primary"></i></button>
+														<button type="button" class="delconf btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
 													</div>
 												</div>
 										</li>
@@ -538,8 +462,8 @@
 													<h5>
 														<span class="label label-default">添付</span>&nbsp;<a href="#">得点.pdf</a></h5>
 													<div class="pull-right">
-														<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-														<button type="button" class="btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
+														<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#staticModal2"><i class="fa fa-pencil text-primary"></i></button>
+														<button type="button" class="delconf btn btn-default btn-circle left"><i class="fa fa-times text-primary"></i></button>
 													</div>
 												</div>
 										</li>
@@ -568,8 +492,138 @@
 
 				</div>
 				<!-- /#wrapper -->
+				<!-- モーダルダイアログ（活動記録修正） -->
+				<div class="modal fade " id="staticModal2" tabindex="-1 " role="dialog " aria-labelledby="staticModalLabel " aria-hidden="true " data-show="true " data-keyboard="false " data-backdrop="static ">
+					<div class="modal-dialog ">
+						<div class="modal-content ">
+							<div class="modal-header ">
+								<button type="button " class="close " data-dismiss="modal">
+									<span aria-hidden="true ">&#215;</span>
+									<span class="sr-only ">閉じる</span>
+								</button>
+								<h4 class="modal-title ">活動記録の編集</h4>
+							</div>
+							<!-- /modal-header -->
+							<div class="modal-body ">
+								<div class="form-group ">
+									<label>タイトル<i class="fa fa-fw fa-asterisk text-danger "></i></label>
+									<input class="form-control" type="text" placeholder="SCSK会社説明会決定！">
+								</div>
+								<div class="form-group">
+									<label>実施内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+									<textarea class="form-control" rows="3" type="text" value="申し込んでいた説明会の案内が来た。"></textarea>
+								</div>
+								<div class="form-group">
+									<label>実施日<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+									<div class="input-group date" id="datepick">
+										<input type="text" class="form-control" type="text" value="2015年10月10日 ">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>添付ファイル</label>
+									<input type="file " class=" text-primary ">
+									<div class="vMargin15 ">当日案内.pdf
+										<button type="button " class="btn btn-default btn-circle "><i class="fa fa-times text-primary "></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer ">
+								<button type="button " class="btn btn-default " data-dismiss="modal">キャンセル</button>
+								<button type="button " class="btn btn-primary ">保存</button>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+
+				<!-- jQuery -->
+				<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+
+				<!-- Bootstrap Core JavaScript -->
+				<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+				<!-- Metis Menu Plugin JavaScript -->
+				<script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+				<!-- Custom Theme JavaScript -->
+				<script src="../../dist/js/sb-admin-2.js"></script>
+				<script src="../../dist/js/bootbox.js"></script>
+
+				<!--datepicker -->
+				<script src="../../js/bootstrap-datepicker.min.js"></script>
+				<script src="../../js/bootstrap-datepicker.ja.js"></script>
+				<script>
+					$('.datepick').datepicker({
+						format: "yyyy/mm/dd",
+						language: "ja",
+						autoclose: true,
+						orientation: "top auto"
+					});
+					$('.delconf').click(function(e) {
+						var confirm = bootbox.confirm('記録を削除します。削除後に元に戻すことはできません。実行しますか?', function(result) {
+							// OKならtrueに、Cancelならfalseになります
+							console.log(result);
+						});
+
+						// Modal内の要素にも簡単にアクセスできます
+						console.log(confirm.find('.btn-primary').text());
+						console.log(e.currentTarget.id);
+
+					});
+				</script>
+
+				<script type="text/javascript">
+					$(window).on('load', function() {
+						$('.selectpicker').selectpicker({
+							'selectedText': 'cat'
+						});
+					});
+				</script>
 
 
+				<script src="../../dist/js/bootstrap-select.js"></script>
+
+				<script type="text/javascript">
+					$(window).on('load', function() {
+						$('.selectpicker').selectpicker({
+							'selectedText': 'cat'
+						});
+					});
+				</script>
+
+				<!-- 活動記録分岐 -->
+				<script type="text/javascript">
+					function inputAction() {
+						if (document.getElementById('changeSelect')) {
+							id = document.getElementById('changeSelect').value;
+							if (id == 'achifact') {
+								document.getElementById('achifact-form').style.display = "";
+								document.getElementById('prize-form').style.display = "none";
+								document.getElementById('certification-form').style.display = "none";
+								document.getElementById('activity-form').style.display = "none";
+							} else if (id == 'prize') {
+								document.getElementById('achifact-form').style.display = "none";
+								document.getElementById('prize-form').style.display = "";
+								document.getElementById('certification-form').style.display = "none";
+								document.getElementById('activity-form').style.display = "none";
+							} else if (id == 'certification') {
+								document.getElementById('achifact-form').style.display = "none";
+								document.getElementById('prize-form').style.display = "none";
+								document.getElementById('certification-form').style.display = "";
+								document.getElementById('activity-form').style.display = "none";
+							} else if (id == 'activity') {
+								document.getElementById('achifact-form').style.display = "none";
+								document.getElementById('prize-form').style.display = "none";
+								document.getElementById('certification-form').style.display = "none";
+								document.getElementById('activity-form').style.display = "";
+							}
+						}
+					}
+					window.onload = entryChange2;
+				</script>
 
 </body>
 

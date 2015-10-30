@@ -9,13 +9,19 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>ツール一覧　｜　ツール</title>
+	<title>ツールの作成　｜　ポートフォリオ</title>
 
 	<!-- Bootstrap Core CSS -->
 	<link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- MetisMenu CSS -->
 	<link href="../../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+	<!-- DataTables CSS -->
+	<link href="../../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+	<!-- DataTables Responsive CSS -->
+	<link href="../../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
 	<link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
@@ -38,6 +44,19 @@
 	<link href="../../css/bootstrap-datepicker.min.css" rel="stylesheet">
 	<link href="../../css/style.css" rel="stylesheet" type="text/css">
 
+
+	<link rel="stylesheet" type="text/css" href="../../dist/css/bootstrap-select.css">
+
+
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 
@@ -51,34 +70,39 @@
 						<img src="../../images/index.png" width="40" height="40" class="pull-left imgArea" />
 					</a>
 					<div class="navbar-text">
-						<img src="../../images/sample_student.jpg" width="35" height="40" class="img-circle pull-left imgArea">
-						<div class="imgside text-nowrap">こんにちは、田中 太郎さん!</div>
-					</div>
+						<a href="student_info/student_info.html">
+							<img src="../../images/sample_student.jpg" width="35" height="40" class="img-circle pull-left imgArea">
+							<span class="imgside">こんにちは 田中 太郎さん!</span>
+						</a>
 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
-						<span class="sr-only">メニュー</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+							<span class="sr-only">メニュー</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+
+					</div>
 
 				</div>
 				<!-- end of navbar-header -->
 
 				<div id="gnavi" class="collapse navbar-collapse navbar-right">
 					<ul class="nav navbar-nav">
-						<li class="nav-item ">
-							<a class="nav-link" href="../admin_top.html">ポートフォリオ</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#">ツール</a>
+						<li class="nav-item">
+							<a class="nav-link" href="../admin_top.html">ポートフォリオ検索</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="admin.html">管理</a>
+							<a class="nav-link" href="tools.html">ツール</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#">管理</a>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="login.html">
+							<a class="nav-link" href="login_admin.html">
 								<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
 							</a>
 						</li>
@@ -89,83 +113,121 @@
 	</div>
 	</nav>
 
-	<div class="container-fluid">
+	<!-- Page Content -->
+	<div id="page-wrapper">
 
-		<!-- Page Content -->
-		<div id="page-wrapper">
-
-			<div class="container-fluid">
-
-				<div class="row" style="margin-top:65px;">
-					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-						<div class="thumbnail">
-							<img src="../../images/tools/univ.jpg" style="max-height:80px" alt="">
-							<div class="caption text-center">
-								<h3>教務システム</h3>
-								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default">編集</button>
-									<button type="button" class="btn btn-default">削除</button>
-								</div>
+		<div class="container-fluid">
+			<div class="row" style="margin-top:55px;">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<ol class="breadcrumb">
+								<li><a href="admin.html">システム管理</a></li>
+								<li><a href="tools.html">ツール</a></li>
+								<li class="active">ツールの作成</li>
+							</ol>
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+							<div class="form-group">
+								<label>ツール名<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+								<input class="form-control" value="教務システム">
 							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-						<div class="thumbnail">
-							<a href="https://bb.kosen-ac.jp" target="_blank">
-								<img src="../../images/tools/bb.jpg" style="max-height:80px" alt="" />
-								<div class="caption text-center">
-									<h3>Blackboard Learn</h3>
-									<div class="btn-group" role="group">
-										<button type="button" class="btn btn-default">編集</button>
-										<button type="button" class="btn btn-default">削除</button>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-						<div class="thumbnail">
-							<img src="../../images/tools/od.jpg" style="max-height:80px" alt="">
-							<div class="caption text-center">
-								<h3>OneDrive</h3>
-								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default">編集</button>
-									<button type="button" class="btn btn-default">削除</button>
-								</div>
+							<div class="form-group">
+								<label>ツールURL<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+								<input class="form-control" value="http://www.yahoo.co.jp">
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-						<div class="thumbnail" style="border-style:dashed;">
-							<img src="../../images/tools/noimages.png" style="max-height:80px" alt="">
-							<div class="caption text-center">
-								<h3>新規ツール</h3>
-								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default">追加</button>
-								</div>
+							<div class="form-group">
+								<label>ツールアイコンファイル</label>
+								<input type="file" class=" text-primary">
 							</div>
+							<button type="reset" class="btn btn-default" onclick=" history.back();return false;">
+								<span class="text-primary">キャンセル</span>
+							</button>
+							<button id="submit" type="submit" class="btn btn-default">
+								<span class="text-info">&nbsp;&nbsp;&nbsp;&nbsp;登録&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</button>
+
 						</div>
+						<!-- /.panel-body -->
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					</div>
-				</div>
+					<!-- /.panel -->
 
-
-
+				</div>
+				<!-- /.col -->
 			</div>
-			<!-- /.container-fluid -->
+			<!-- /.row -->
 		</div>
-		<!-- /#page-wrapper -->
+		<!-- /.container-fluid -->
+	</div>
+	<!-- /#page-wrapper -->
 	</div>
 	<!-- /#wrapper -->
+
+
+
+	<!-- jQuery -->
+	<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+
+	<!--datepicker -->
+	<script src="../../js/bootstrap-datepicker.min.js"></script>
+	<script src="../../js/bootstrap-datepicker.ja.js"></script>
+	<script>
+		$('#date').datepicker({
+			format: "yyyy年mm月dd日",
+			language: "ja",
+			autoclose: true,
+			orientation: "top auto"
+		});
+	</script>
+
+	<!-- DataTables JavaScript -->
+	<script src="../../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+	<script src="../../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="../../dist/js/sb-admin-2.js"></script>
+
+	<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+	<script>
+		$(document).ready(function() {
+			$('#dataTables-example').DataTable({
+				responsive: true
+			});
+		});
+	</script>
+
+
+	<!-- Custom Theme JavaScript -->
+	<script src="../../dist/js/sb-admin-2.js"></script>
+
+	<script src="../../dist/js/bootstrap-select.js"></script>
+
+	<script type="text/javascript">
+		$(window).on('load', function() {
+			$('.selectpicker').selectpicker({
+				'selectedText': 'cat'
+			});
+		});
+		$('#submit').on('click', function (e) {
+
+				 window.location.href = "tools.html";
+
+		});
+		$('#cancel').on('click', function (e) {
+
+				 window.location.href = "tools.html";
+
+		});
+
+	</script>
 
 
 </body>

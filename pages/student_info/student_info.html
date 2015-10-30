@@ -42,8 +42,6 @@
 
 	<!-- Custom CSS -->
 	<link href="../../dist/css/custom.css" rel="stylesheet">
-	<script src="../../dist/js/bootstrap-toggle.js"></script>
-
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -186,40 +184,45 @@
 														<h3>田中 太郎</h3>
 														<p>学歴　〇〇中学</p>
 														<p>
-															<a data-toggle="collapse" data-parent="#accordion" href="#clubC">
-																<button type="button" class="btn btn-default btn-xs">所属クラブ
-																	<span class="fa fa-angle-down"></span>
-															</a>
+															<button type="button" class="btn btn-default btn-xs text-center" data-toggle="collapse" data-parent="#accordion" href="#clubC">
+																所属クラブ
+																<span class="fa fa-angle-down"></span>
 															</button>
+															</a>
 															&nbsp;テニス部</p>
 														<div id="clubC" class="panel-collapse collapse">
 															<div class="panel-body">
 																<dl>
 																	<dt>テニス部</dt>
-																	<dd>2014年4月1日-</dd>
+																	<dd>
+																		<span class="label label-info">期間</span>&nbsp;2014年4月1日-</dd>
 																	<dt>水泳部</dt>
-																	<dd>2013年4月1日-2014年3月31日</dd>
+																	<dd>
+																		<span class="label label-info">期間</span>&nbsp;2013年4月1日-2014年3月31日</dd>
 																	<dt>アメリカンフットボール部</dt>
-																	<dd>2012年4月1日-2014年3月31日</dd>
+																	<dd>
+																		<span class="label label-info">期間</span>&nbsp;2012年4月1日-2014年3月31日</dd>
 																</dl>
 															</div>
 														</div>
 														<p>
-															<a data-toggle="collapse" data-parent="#accordion" href="#committeeC">
-																<button type="button" class="btn btn-default btn-xs">クラス委員
-																	<span class="fa fa-angle-down"></span>
-															</a>
+															<button type="button" class="btn btn-default btn-xs text-center" data-toggle="collapse" data-parent="#accordion" href="#committeeC">
+																クラス委員
+																<span class="fa fa-angle-down"></span>
 															</button>
 															&nbsp;委員長</p>
 														<div id="committeeC" class="panel-collapse collapse">
 															<div class="panel-body">
 																<dl>
 																	<dt>委員長</dt>
-																	<dd>2014年4月1日-</dd>
+																	<dd>
+																		<span class="label label-info">期間</span>&nbsp;2014年4月1日-</dd>
 																	<dt>副委員長</dt>
-																	<dd>2013年4月1日-2014年3月31日</dd>
+																	<dd>
+																		<span class="label label-info">期間</span>&nbsp;2013年4月1日-2014年3月31日</dd>
 																	<dt>風紀委員</dt>
-																	<dd>2012年4月1日-2014年3月31日</dd>
+																	<dd>
+																		<span class="label label-info">期間</span>&nbsp;2012年4月1日-2014年3月31日</dd>
 																</dl>
 															</div>
 														</div>
@@ -272,11 +275,6 @@
 															<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
 														</div>
 													</div>
-													<div class="checkbox">
-														<label>
-															<input type="checkbox"> 非表示にする
-														</label>
-													</div>
 													<button type="reset" class="btn btn-default">
 														<span class="text-primary">クリア</span>
 													</button>
@@ -297,18 +295,18 @@
 															<h5>学生調書:
 																<div class="pull-right">
 																	<p class="text-muted">
-																		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-																		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
-																		非表示</p>
+																		<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#info_edit"><i class="fa fa-pencil text-primary"></i></button>
+																		<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																	</p>
 																</div>
 															</h5>
 															<div style="margin-left:30px;">
 																<span class="label label-default">添付</span>&nbsp;<a href="#">chosyo.pdf</a>
 																<h5>
-																	<span class="label label-primary">内容</span>&nbsp;学生調書記録を添付</h5>
+																	<span class="label label-info">内容</span>&nbsp;学生調書記録を添付</h5>
 																<h5>
-																	<span class="label label-primary">登録日</span>&nbsp;2013年10月12日</h5>
-																<span class="label label-primary">登録者</span>&nbsp;林　みちお
+																	<span class="label label-info">登録日</span>&nbsp;2013年10月12日</h5>
+																<span class="label label-info">登録者</span>&nbsp;林　みちお
 															</div>
 														</td>
 													</tr>
@@ -316,17 +314,17 @@
 														<td>
 															<h5>追加資料:
 																<div class="pull-right">
-																	<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-																	<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																	<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#info_edit"><i class="fa fa-pencil text-primary"></i></button>
+																	<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
 																</div>
 															</h5>
 															<div style="margin-left:30px;">
 																<span class="label label-default">添付</span>&nbsp;<a href="#">chosyo0901.pdf</a>
 																<h5>
-																	<span class="label label-primary">内容</span>&nbsp;前期分の学生調書の参考資料</h5>
+																	<span class="label label-info">内容</span>&nbsp;前期分の学生調書の参考資料</h5>
 																<h5>
-																	<span class="label label-primary">登録日</span>&nbsp;2013年10月1日</h5>
-																<span class="label label-primary">登録者</span>&nbsp;林　みちお
+																	<span class="label label-info">登録日</span>&nbsp;2013年10月1日</h5>
+																<span class="label label-info">登録者</span>&nbsp;林　みちお
 															</div>
 														</td>
 													</tr>
@@ -334,17 +332,17 @@
 														<td>
 															<h5>学生調書0901:
 																<div class="pull-right">
-																	<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-																	<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																	<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#info_edit"><i class="fa fa-pencil text-primary"></i></button>
+																	<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
 																</div>
 															</h5>
 															<div style="margin-left:30px;">
 																<span class="label label-default">添付</span>&nbsp;<a href="#">chosyo0901.pdf</a>
 																<h5>
-																	<span class="label label-primary">内容</span>&nbsp;学生調書前期分を整理したもの</h5>
+																	<span class="label label-info">内容</span>&nbsp;学生調書前期分を整理したもの</h5>
 																<h5>
-																	<span class="label label-primary">登録日</span>&nbsp;2013年9月1日</h5>
-																<span class="label label-primary">登録者</span>&nbsp;林　みちお
+																	<span class="label label-info">登録日</span>&nbsp;2013年9月1日</h5>
+																<span class="label label-info">登録者</span>&nbsp;林　みちお
 															</div>
 														</td>
 													</tr>
@@ -353,18 +351,18 @@
 															<h5>学生調書2012:
 																<div class="pull-right">
 																	<p class="text-muted">
-																		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-																		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
-																		非表示</p>
+																		<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#info_edit"><i class="fa fa-pencil text-primary"></i></button>
+																		<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																	</p>
 																</div>
 															</h5>
 															<div style="margin-left:30px;">
 																<span class="label label-default">添付</span>&nbsp;<a href="#">chosyo201212.pdf</a>
 																<h5>
-																	<span class="label label-primary">内容</span>&nbsp;学生調書記録を添付</h5>
+																	<span class="label label-info">内容</span>&nbsp;学生調書記録を添付</h5>
 																<h5>
-																	<span class="label label-primary">登録日</span>&nbsp;2012年12月20日</h5>
-																<span class="label label-primary">登録者</span>&nbsp;林　みちお
+																	<span class="label label-info">登録日</span>&nbsp;2012年12月20日</h5>
+																<span class="label label-info">登録者</span>&nbsp;林　みちお
 															</div>
 														</td>
 													</tr>
@@ -439,14 +437,10 @@
 																	<tr>
 																		<td>
 																			<h5>補講:
-																				<!-- 教員以上のみ表示項目 -->
-																				<!--
-	                                                        	<div class="pull-right">
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
-	                                                        	</div>
-	                                                        	-->
-																				<!-- 教員以上のみ表示項目終わり -->
+																				<div class="pull-right">
+																					<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#support_edit"><i class="fa fa-pencil text-primary"></i></button>
+																					<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																				</div>
 																			</h5>
 																			<div style="margin-left:30px;">
 																				<span class="label label-default">添付</span>&nbsp;<a href="#">report.docx</a>
@@ -462,14 +456,10 @@
 																	<tr>
 																		<td>
 																			<h5>担任面談:
-																				<!-- 教員以上のみ表示項目 -->
-																				<!--
-	                                                        	<div class="pull-right">
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
-	                                                        	</div>
-	                                                        	-->
-																				<!-- 教員以上のみ表示項目終わり -->
+																				<div class="pull-right">
+																					<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#support_edit"><i class="fa fa-pencil text-primary"></i></button>
+																					<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																				</div>
 																			</h5>
 																			<div style="margin-left:30px;">
 																				<span class="label label-default">添付</span>&nbsp;<a href="#">面談シート.docx</a>
@@ -504,14 +494,10 @@
 																	<tr>
 																		<td>
 																			<h5>処分指導:
-																				<!-- 教員以上のみ表示項目 -->
-																				<!--
-	                                                        	<div class="pull-right">
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
-	                                                        	</div>
-	                                                        	-->
-																				<!-- 教員以上のみ表示項目終わり -->
+																				<div class="pull-right">
+																					<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#support_edit"><i class="fa fa-pencil text-primary"></i></button>
+																					<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																				</div>
 																			</h5>
 																			<div style="margin-left:30px;">
 																				<span class="label label-default">添付</span>&nbsp;
@@ -526,14 +512,10 @@
 																	<tr>
 																		<td>
 																			<h5>担任面談:
-																				<!-- 教員以上のみ表示項目 -->
-																				<!--
-	                                                        	<div class="pull-right">
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
-	                                                        	</div>
-	                                                        	-->
-																				<!-- 教員以上のみ表示項目終わり -->
+																				<div class="pull-right">
+																					<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#support_edit"><i class="fa fa-pencil text-primary"></i></button>
+																					<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																				</div>
 																			</h5>
 																			<div style="margin-left:30px;">
 																				<span class="label label-default">添付</span>&nbsp;<a href="#">面談シート.docx</a>
@@ -568,14 +550,10 @@
 																	<tr>
 																		<td>
 																			<h5>補講:
-																				<!-- 教員以上のみ表示項目 -->
-																				<!--
-	                                                        	<div class="pull-right">
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
-	                                                        	</div>
-	                                                        	-->
-																				<!-- 教員以上のみ表示項目終わり -->
+																				<div class="pull-right">
+																					<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#support_edit"><i class="fa fa-pencil text-primary"></i></button>
+																					<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																				</div>
 																			</h5>
 																			<div style="margin-left:30px;">
 																				<span class="label label-default">添付</span>&nbsp;<a href="#">report.docx</a>
@@ -591,14 +569,10 @@
 																	<tr>
 																		<td>
 																			<h5>担任面談:
-																				<!-- 教員以上のみ表示項目 -->
-																				<!--
-	                                                        	<div class="pull-right">
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-pencil text-primary"></i></button>
-	                                                        		<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
-	                                                        	</div>
-	                                                        	-->
-																				<!-- 教員以上のみ表示項目終わり -->
+																				<div class="pull-right">
+																					<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#support_edit"><i class="fa fa-pencil text-primary"></i></button>
+																					<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+																				</div>
 																			</h5>
 																			<div style="margin-left:30px;">
 																				<span class="label label-default">添付</span>&nbsp;<a href="#">面談シート.docx</a>
@@ -653,7 +627,7 @@
 				<div class="modal-body">
 					<button type="button" class="btn btn-outline btn-default" data-toggle="collapse" data-parent="#accordion" href="#addStdRecord">
 						<i class="fa fa-plus"></i> 記録簿の追加</button>
-					<div class="panel panel-default">
+					<div class="panel">
 						<div id="addStdRecord" class="panel-collapse collapse input_form">
 							<div class="panel-body">
 								<div class="form-group">
@@ -671,9 +645,19 @@
 						</div>
 					</div>
 					<dl>
-						<dt>2013年2月4日　佐藤　亜矢</dt>
+						<dt>2013年2月4日　佐藤　亜矢
+							<div class="pull-right">
+								<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#comment_edit"><i class="fa fa-pencil text-primary"></i></button>
+								<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+							</div>
+						</dt>
 						<dd style="padding-left:15px;">田中君は常にクラスのムードメーカ的存在である</dd>
-						<dt>2012年12月4日　林　みちお</dt>
+						<dt>2012年12月4日　林　みちお
+							<div class="pull-right">
+								<button type="button" class="btn btn-default btn-circle" data-toggle="modal" data-target="#comment_edit"><i class="fa fa-pencil text-primary"></i></button>
+								<button type="button" class="delconf btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+							</div>
+						</dt>
 						<dd style="padding-left:15px;">田中君の記録
 							</br><a href="#">t_tanaka.docx</a></dd>
 
@@ -687,12 +671,133 @@
 	<!-- /.modal -->
 
 
+	<!-- モーダルダイアログ（将来の夢を編集） -->
+	<div class="modal fade" id="info_edit" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&#215;</span>
+						<span class="sr-only">閉じる</span>
+					</button>
+					<h4 class="modal-title">追加情報編集</h4>
+				</div>
+				<!-- /modal-header -->
+				<div class="modal-body">
+					<div class="form-group">
+						<label>タイトル<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<input class="form-control" value="学生調書">
+					</div>
+					<div class="form-group">
+						<label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<textarea class="form-control" rows="3">学生調書を添付しました。</textarea>
+					</div>
+					<div class="form-group">
+						<label>添付ファイル</label>
+						<input type="file" class=" text-primary">
+						<div class="vMargin15">XXXXXX.pdf
+							<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer ">
+					<button type="button " class="btn btn-default" data-dismiss="modal">キャンセル</button>
+					<button type="button " class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- モーダルダイアログ（指導履歴を編集） -->
+	<div class="modal fade" id="support_edit" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&#215;</span>
+						<span class="sr-only">閉じる</span>
+					</button>
+					<h4 class="modal-title">指導履歴編集</h4>
+				</div>
+				<!-- /modal-header -->
+				<div class="modal-body">
+					<div class="form-group">
+						<label>タイプ<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<select class="form-control">
+							<option selected>補講</option>
+							<option>担任面談</option>
+							<option>処分指導</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<textarea class="form-control" rows="3">補講時の提出ファイル</textarea>
+					</div>
+					<div class="form-group">
+						<label>添付ファイル</label>
+						<input type="file" class=" text-primary">
+						<div class="vMargin15">XXXXXX.pdf
+							<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer ">
+					<button type="button " class="btn btn-default" data-dismiss="modal">キャンセル</button>
+					<button type="button " class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<!-- モーダルダイアログ（記録簿を編集） -->
+	<div class="modal fade" id="comment_edit" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&#215;</span>
+						<span class="sr-only">閉じる</span>
+					</button>
+					<h4 class="modal-title">記録簿編集</h4>
+				</div>
+				<!-- /modal-header -->
+				<div class="modal-body">
+					<div class="form-group">
+						<label>内容<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+						<textarea class="form-control" rows="3">田中君は常にクラスのムードメーカ的存在である</textarea>
+					</div>
+					<div class="form-group">
+						<label>添付ファイル</label>
+						<input type="file" class=" text-primary">
+						<div class="vMargin15">XXXXXX.pdf
+							<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer ">
+					<button type="button " class="btn btn-default" data-dismiss="modal">キャンセル</button>
+					<button type="button " class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
 
 	<!-- jQuery -->
 	<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../dist/js/bootstrap-toggle.js"></script>
+	<script src="../../dist/js/bootbox.js"></script>
+
 
 	<!-- Metis Menu Plugin JavaScript -->
 	<script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
@@ -709,6 +814,17 @@
 			language: "ja",
 			autoclose: true,
 			orientation: "top auto"
+		});
+		$('.delconf').click(function(e) {
+			var confirm = bootbox.confirm('記録を削除します。削除後に元に戻すことはできません。実行しますか?', function(result) {
+				// OKならtrueに、Cancelならfalseになります
+				console.log(result);
+			});
+
+			// Modal内の要素にも簡単にアクセスできます
+			console.log(confirm.find('.btn-primary').text());
+			console.log(e.currentTarget.id);
+
 		});
 	</script>
 

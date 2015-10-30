@@ -233,9 +233,32 @@
                                   <input type="checkbox" checked data-toggle="toggle" data-size="small">
                                 </div>
                                 <H4></H4>
-                                <p>
-                                  <button class="btn btn-default">+新規ステップ</button>
-                                </p>
+									<div class="panel-body">
+										<button type="button" class="btn btn-outline btn-default step_add" data-toggle="collapse" data-parent="#accordion" href="#addStep1">
+											<i class="fa fa-plus"></i>新規ステップ</button>
+									</div>
+									<div class="panel panel-default">
+										<div id="addStep1" class="panel-collapse collapse step_add">
+											<div class="panel-body">
+												<div class="form-group">
+													<label>ステップ名<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+													<input type="text" class="form-control">
+												</div>
+												<div>
+													<label>達成予定年度<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+													<select class="selectpicker">
+														<option value="1">2014年度</option>
+														<option value="1">2015年度</option>
+													</select>
+												</div>
+
+												<button type="submit" class="btn btn-default">
+													<span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;追加&nbsp;&nbsp;&nbsp;&nbsp;</span>
+												</button>
+											</div>
+										</div>
+									</div>
+
                                 <table class="table">
                                   <tbody>
                                     <tr>
@@ -243,12 +266,16 @@
                                       <td>2015年</td>
                                       <td>毎日腹筋50回</td>
                                       <td>
+                                      	<button type="button" class="btn btn-circle" data-toggle="modal" data-target="#staticModal3">
+                                      	<i class="fa fa-fw fa-paw text-primary"></i></button></td>
+                                      <td>
                                         <div class="label label-info">実行中</div></td>
                                     </tr>
                                     <tr>
                                       <th scope="row">2</th>
                                       <td>2015年</td>
                                       <td>毎日腹筋50回</td>
+                                      <td><i class="fa fa-fw fa-paw text-muted"></i></td>
                                       <td>
                                         <div class="label label-info">実行中</div></td>
                                     </tr>
@@ -256,6 +283,7 @@
                                       <th scope="row">3</th>
                                       <td>2015年</td>
                                       <td>毎日腹筋50回</td>
+                                      <td><i class="fa fa-fw fa-paw text-muted"></i></td>
                                       <td>
                                         <div class="label label-info">実行中</div></td>
                                     </tr>
@@ -280,6 +308,7 @@
                                             <th scope="row">1</th>
                                             <td>2015年</td>
                                             <td>毎日腹筋50回</td>
+                                            <td><i class="fa fa-fw fa-paw text-muted"></i></td>
                                             <td>
                                               <div class="label label-info">実行中</div></td>
                                           </tr>
@@ -287,6 +316,7 @@
                                             <th scope="row">2</th>
                                             <td>2015年</td>
                                             <td>毎日腹筋50回</td>
+                                            <td><i class="fa fa-fw fa-paw text-muted"></i></td>
                                             <td>
                                               <div class="label label-info">実行中</div></td>
                                           </tr>
@@ -294,6 +324,7 @@
                                             <th scope="row">3</th>
                                             <td>2015年</td>
                                             <td>毎日腹筋50回</td>
+                                            <td><i class="fa fa-fw fa-paw text-muted"></i></td>
                                             <td>
                                               <div class="label label-info">実行中</div></td>
                                           </tr>
@@ -416,6 +447,7 @@
                   <!-- /.modal-dialog -->
                 </div>
                 <!-- /.modal -->
+
                 <!-- モーダルダイアログ（ステップ） -->
                 <div aria-hidden="true" aria-labelledby="staticModalLabel" class="modal fade" data-backdrop="static" data-keyboard="false" data-show="true" id="staticModal2" role="dialog" tabindex="-1">
                   <div class="modal-dialog">
@@ -504,6 +536,67 @@
                       .css('display', '');
                   });
                 </script>
+
+		<!-- モーダルダイアログ（ステップの記録） -->
+		<div class="modal fade" id="staticModal3" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&#215;</span>
+							<span class="sr-only">閉じる</span>
+						</button>
+						<h4 class="modal-title">ステップの記録</h4>
+					</div>
+					<!-- /modal-header -->
+					<div class="modal-body">
+					<h3>毎日腹筋50回</h3>
+						<div class="form-group">
+							<label>コメント<i class="fa fa-fw fa-asterisk text-danger"></i></label>
+												<div style="margin-left:100px;">
+													<i class="fa fa-comment text-primary"></i>
+													&nbsp;&nbsp;毎日寝る前に弟と競って頑張ってます。(20115/10/23)<i class="fa fa-pencil text-primary"></i>
+													<br>
+													<i class="fa fa-comment text-primary"></i>
+													&nbsp;&nbsp;おなかが少しずつシマってきた気がします。(20115/10/23)<i class="fa fa-pencil text-primary"></i>
+													<br>
+													<img class="img-circle pull-left imgArea" height="20" src="../../images/student.png" width="20">
+													&nbsp;&nbsp;継続は力なりです。ガンバッテクダサイ（小田　実加）(20115/10/25)
+													<br><br>
+													<form class="form-inline" role="form">
+														<div class="form-group">
+															<input class="form-control" type="text" placeholder="コメントする．．．" />
+														</div>
+														<div class="form-group">
+															<button class="btn step_add">追加</button>
+														</div>
+													</form>
+												</div>
+
+						</div>
+
+						<div class="form-group">
+							<label>記録（ファイル）</label>
+							<input type="file" class=" text-primary">
+							<div class="vMargin15">pic20150624.jpg
+								<button type="button" class="btn btn-default btn-circle"><i class="fa fa-times text-primary"></i></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">保存</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+
+
 </body>
 
 </html>
